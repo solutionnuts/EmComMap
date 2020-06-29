@@ -1,18 +1,17 @@
-# EmComMap
+<img src="Resources/EmComMap_Logo.png">
+
 ## Live multi-user annotatble map for emergency communications
 
 <img src="Resources/map_image.png" width="450">
 
-### Home page
-[EmComMap](http://emcommap.org)
+#### [EmComMap Home Page](http://emcommap.org)
 
-### Demo
-[Demo server](http://app.emcommap.org/EmComMap/html/index.html)
+#### [Demo Server](http://app.emcommap.org/EmComMap/html/index.html)
 
 ### Features
 * Interactive map with symbols for operators, locations, and incidents
 * Incidents defined by geographic region and time
-* Text-based message traffic with associated precedence (e.g. priority, emergency)
+* Text-based message traffic with associated precedence (e.g. routine, priority or emergency)
 * Attach files to messages
 * Operator status reports
 * Location status reports
@@ -23,45 +22,45 @@
 * Persistent storage on server database, with replication
 
 ### Deployment
-* Can be encrypted (https) or unencrypted (http, suitable for Amateur Radio)
-* MESH networking
-* Internet / intranet
+* App can be encrypted (https) or unencrypted (http) which is required for amateur radio
+* Can be installed on any webserver whether internet facing or private (ex. MESH networking)
 * Relies on three server platforms, each of which can be deployed redundantly to avoid single points of failure:
   1. CouchDB
   2. Map tile server
-  3. Web server (e.g. Apache2)
+  3. Web server (e.g. Apache2 or nginx)
 
-### User manual
+### User Manual
 * See [EmComMap User Guide](html/Documentation/EmComMap_user_guide.pdf)
 
-### Installation (Ubuntu Linux)
+### Installation
 
-This installation method has been tested on Ubuntu 16.04.5 (xenial). The process is not particularly pleasant, and if others have suggestions on how to improve it, please contact me.
+#### Linux (Ubuntu/Debian)
 
-#### CouchDB database (http://couchdb.apache.org/)
+1. Update System
 
-Install CouchDB (v1.6.0 tested)
+		$ sudo apt update && sudo apt -y upgrade
+		
+2. Install CouchDB database (http://couchdb.apache.org/)
 
-`$ sudo apt install couchdb`
+		$ sudo apt install couchdb
 
-Edit the file /etc/couchdb/local.ini, for example using  
-`$ sudo vi /etc/couchdb/local.ini`
+	a. Edit the file `/etc/couchdb/local.ini`
 
-1. Insert the line:
-```enable_cors = true```
-beneath the line that reads
-```[httpd]```
+		$ sudo vi /etc/couchdb/local.ini
 
-1. Add the following lines to the end of the file:
-```[cors]
-origins = *
-credentials = true
-methods = GET, PUT, POST, HEAD, DELETE
-headers = accept, authorization, content-type, origin, referer, x-csrf-token
-```
+	b. Insert the line `enable_cors = true` beneath the line that reads `[httpd]`
+	
+	c. Add the following lines to the end of the file:
+	
+		[cors]
+		origins = *
+		credentials = true
+		methods = GET, PUT, POST, HEAD, DELETE
+		headers = accept, authorization, content-type, origin, referer, x-csrf-token
 
-Restart CouchDB:  
-`$ sudo /etc/init.d/couchdb restart`
+	d. Restart CouchDB
+	
+		$ sudo /etc/init.d/couchdb restart
 
 Set up databases using web configuration tool. Direct your browser to
 `http://<host>:5984/_utils/`, where `<host>` is the hostname or IP address
