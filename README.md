@@ -34,33 +34,31 @@
 
 ### Installation
 
-#### Linux (Ubuntu/Debian)
+#### Linux (Ubuntu 18.04)
 
 1. Update System
 
 		$ sudo apt update && sudo apt -y upgrade
 		
-2. Install CouchDB database (http://couchdb.apache.org/)
+2. Install CouchDB 3.x database (http://couchdb.apache.org/)
+
+	a. Add the CouchDB GPG key to the system
+	
+		$ sudo curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
+	
+	b. Once the key is imported, add the CouchDB repository
+	
+		$ sudo echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee -a /etc/apt/sources.list
+		
+	c. Now that the repository is added, update the packages list and install CouchDB
+	
+		$ sudo apt update
 
 		$ sudo apt install couchdb
+		
+	d. Follow the on-screen instructions to complete the CouchDB installation
 
-	a. Edit the file `/etc/couchdb/local.ini`
-
-		$ sudo vi /etc/couchdb/local.ini
-
-	b. Insert the line `enable_cors = true` beneath the line that reads `[httpd]`
-	
-	c. Add the following lines to the end of the file:
-	
-		[cors]
-		origins = *
-		credentials = true
-		methods = GET, PUT, POST, HEAD, DELETE
-		headers = accept, authorization, content-type, origin, referer, x-csrf-token
-
-	d. Restart CouchDB
-	
-		$ sudo /etc/init.d/couchdb restart
+	e. Open a web browser and log into the Fauxton web admin interface for CouchDB `http://<hostname>:5984/_utils`
 
 Set up databases using web configuration tool. Direct your browser to
 `http://<host>:5984/_utils/`, where `<host>` is the hostname or IP address
