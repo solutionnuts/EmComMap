@@ -2,8 +2,8 @@
    :alt: EmComMap
    :align: right
 
-===========================
-EmComMap Documentation
-===========================
+===================
+EmComMap User Guide
+===================
 
 :Version: 0.4
