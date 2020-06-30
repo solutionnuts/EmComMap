@@ -18,6 +18,8 @@ EmComMap User Guide
    :hidden:
 
    gettingstarted/overview
+   gettingstarted/installation
+   gettingstarted/installcouchdb
 
 .. toctree::
    :maxdepth: 1
