@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'AREDN Documentation'
-copyright = u'2020, AREDN'
-author = u'KC0EUW'
+project = u'EmComMap Documentation'
+copyright = u'2020, EmComMap'
+author = u'AE7WY'
 
 # The short X.Y version
-version = u'3.20.3.0'
+version = u'0.4'
 # The full version, including alpha/beta/rc tags
-release = u'3.20.3.0'
+release = u'0.4'
 
 
 # -- General configuration ---------------------------------------------------
