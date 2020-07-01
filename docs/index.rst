@@ -23,6 +23,8 @@ emcommap@gmail.com
 
 `Demo Server <http://app.emcommap.org/EmComMap/html/index.html>`_
 
+      * `Email Dan <emcommap@gmail.com>`_ for access to the demo server
+
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started Guide
