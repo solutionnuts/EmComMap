@@ -218,7 +218,7 @@ Ubuntu/Debian
 
     $ sudo apt install -y httpd
 
-2. Change directory to `/var/www/html` and download EmComMap ::
+2. Change directory to ``/var/www/html`` and download EmComMap ::
 
     $ cd /var/www/html
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
@@ -246,7 +246,7 @@ CentOS
 EmComMap Configuration
 ++++++++++++++++++++++
 
-1. Open the file `/var/www/html/EmComMap/html/config.js` in a text editor ::
+1. Open the file ``/var/www/html/EmComMap/html/config.js`` in a text editor ::
 
     $ sudo vim /var/www/html/EmComMap/html/config.js
     
@@ -264,9 +264,9 @@ EmComMap Configuration
         };
         var DEFAULT_DB_HOST = '<host>';
         
-3. Change the **RUN_LOCATION** string to `my-install` instead of `local`
+3. Change the **RUN_LOCATION** string to ``my-install`` instead of ``local``
 
-4. Change both instances of `<host>` to the hostname or IP of your EmComMap server.
+4. Change both instances of ``<host>`` to the hostname or IP of your EmComMap server.
 
 .. note:: If you have the CouchDB server on a different computer, then you will need to use that computer's address for **DEFAULT_DB_HOST**.
 
