@@ -8,6 +8,17 @@ EmComMap User Guide
 
 :Version: 0.4
 
+|
+|
+|
+
+**Created by Dan Ruderman - K6OAT**
+
+emcommap@gmail.com
+
+|
+|
+
 `EmComMap Home Page <http://app.emcommap.org/EmComMap/html/index.html>`_
 
 `Demo Server <http://emcommap.org>`_
