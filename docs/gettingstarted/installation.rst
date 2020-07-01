@@ -32,17 +32,23 @@ Debian 9 (stretch)
 
 1. Start by enabling the Apache CouchDB package repository.
 
-    ::$ sudo apt-get install -y apt-transport-https gnupg ca-certificates
-      $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+::
+
+    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key
 
-    ::$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+::
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package
 
-    ::$ sudo apt update
-      $ sudo apt install -y couchdb
+::
+
+    $ sudo apt update
+    $ sudo apt install -y couchdb
 
 Debian 10 (buster)
 ++++++++++++++++++
