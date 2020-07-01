@@ -149,7 +149,7 @@ CentOS
 
     ::
 
-    **[bintray--apache-couchdb-rpm]**
+    [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
     gpgcheck=0
@@ -169,7 +169,7 @@ RHEL 7
 
     ::
 
-    **[bintray--apache-couchdb-rpm]**
+    [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el6/$basearch/
     gpgcheck=0
@@ -189,7 +189,7 @@ RHEL 7
 
     ::
 
-    **[bintray--apache-couchdb-rpm]**
+    [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el7/$basearch/
     gpgcheck=0
@@ -209,7 +209,7 @@ RHEL 8
 
     ::
 
-    **[bintray--apache-couchdb-rpm]**
+    [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el8/$basearch/
     gpgcheck=0
