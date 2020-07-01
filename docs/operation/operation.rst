@@ -102,6 +102,7 @@ New Region
 |
 |
 |
+|
 
    .. image:: _images/emcommap_incident_enddate.png
       :alt: EmComMap Incident Start Date
