@@ -119,5 +119,5 @@ New Region
 
 6. Give the incident a name (e.g. 20181114 Burbank Fire)
 
-7. Click **Create region/incident and show EmComMap** button
+7. Click **Create region/incident and show EmComMap** button.  The new region will be defined in the database along with the new incident.
 
