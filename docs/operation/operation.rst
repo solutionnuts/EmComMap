@@ -116,8 +116,6 @@ New Region
 |
 |
 |
-|
-|
 
 6. Give the incident a name (e.g. 20181114 Burbank Fire)
 
