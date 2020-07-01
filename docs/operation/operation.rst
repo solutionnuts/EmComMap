@@ -10,7 +10,46 @@ Accessing & Logging In
 ----------------------
 
    .. image:: _images/emcommap_login_screen.png
-      :alt: Firmware Install Connections
+      :alt: EmComMap Login Screen
       :align: right
 
 1. Open your web broswer and go to **http://<address or IP>:8080/** 
+
+2. Enter your username and password.
+
+   *You may be able to log in as guest with password guest. If you would like personal credentials, contact the host administrator.*
+
+3. Select your desired database and map tile servers. Unless you have access to a different host database and map tile server, use the default database host in **Remote host** and **Tile server URL**.
+
+4. Click **Login**
+
+.. note:: If you have difficulty logging in, take note of any error messages that appear on the javascript console within your browser and forward to the app developers emcommap@gmail.com.
+
+.. note:: Alternatively to working in a multi-operator environment, you can operate in standalone/single user mode by clicking the **Standalone mode** radio button. This will work only with data that is local to your browser and not shared with others, so it’s a good way to either experiment or to scribe traffic for a voice net.
+
+.. warning:: When using **Standalone mode**, be very careful not to clear your browser cache, or you will lose all your data!
+
+Incident Management
+-------------------
+
+Once logged in, you will be able to choose and existing incident or create one of your own.
+
+   .. image:: _images/emcommap_incident_select.png
+      :alt: EmComMap Incident Select
+      :align: center
+
+Open Existing Incident
+++++++++++++++++++++++
+
+1. Click on the dropdown labeled **select an existing incident** and choose your desired incident.
+
+2. Click **Show EmComMap** button to open the incident.
+
+.. note:: If the selection box entitled **Select existing incident** does not contain any incidents, you may need to wait a few seconds for the database to sync or try refreshing the page. If it stays empty, then there may be no incidents yet defined, so that you will need to define one.
+
+Create a New Incident
++++++++++++++++++++++
+
+To create a new incident, use the **Define new incident** area.
+
+1. 
