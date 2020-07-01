@@ -253,7 +253,7 @@ Docker
 **COMING SOON**
 
 EmComMap Configuration
-++++++++++++++++++++++
+----------------------
 
 1. Open the file ``/var/www/html/EmComMap/html/config.js`` in a text editor ::
 
