@@ -202,7 +202,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
-.. image:: ../../Resources/OpenMapTiles_Configure5.png
+.. image:: ../../Resources/OpenMapTiles_Configure6.png
     :alt: OpenMapTiles Setup Screen
     :align: right
     
