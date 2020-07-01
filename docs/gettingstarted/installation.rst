@@ -153,7 +153,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
     | This command **MUST** be run from the directory you created above. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open.
 
-.. image:: _images/OpenMapTiles_Configure1.png
+.. image:: _images/OpenMapTiles_Configure_1.png
     :alt: OpenMapTiles Setup Screen
     :align: right
 
@@ -169,7 +169,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
-.. image:: _images/OpenMapTiles_Configure2.png
+.. image:: _images/OpenMapTiles_Configure_2.png
     :alt: OpenMapTiles Setup Screen
     :align: right
 
@@ -183,7 +183,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
-.. image:: _images/OpenMapTiles_Configure3.png
+.. image:: _images/OpenMapTiles_Configure_3.png
     :alt: OpenMapTiles Setup Screen
     :align: right
     
@@ -208,7 +208,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
-.. image:: _images/OpenMapTiles_Configure6.png
+.. image:: _images/OpenMapTiles_Configure_6.png
     :alt: OpenMapTiles Setup Screen
     :align: right
     
