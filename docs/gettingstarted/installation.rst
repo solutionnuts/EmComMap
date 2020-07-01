@@ -23,9 +23,7 @@ If you are running one of the following versions of Linux, the easiest way to in
 * Ubuntu 16.04 (xenial)
 * Ubuntu 18.04 (bionic)
 * Ubuntu 20.04 (focal)
-* CentOS/RHEL 6
-* CentOS/RHEL 7
-* CentOS/RHEL 8
+* CentOS
 
 Debian 9 (stretch)
 ++++++++++++++++++
@@ -127,54 +125,6 @@ CentOS
 2. Update the repository and install the CouchDB package ::
 
        $ sudo yum -y install epel-release && sudo yum -y install couchdb
-    
-RHEL 7
-++++++
-
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
-
-    [bintray--apache-couchdb-rpm]
-    name=bintray--apache-couchdb-rpm
-    baseurl=http://apache.bintray.com/couchdb-rpm/el6/$basearch/
-    gpgcheck=0
-    repo_gpgcheck=0
-    enabled=1
-
-2. Update the repository and install the CouchDB package ::
-
-    $ sudo yum -y install epel-release && sudo yum -y install couchdb
-
-RHEL 7
-++++++
-
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
-
-    [bintray--apache-couchdb-rpm]
-    name=bintray--apache-couchdb-rpm
-    baseurl=http://apache.bintray.com/couchdb-rpm/el7/$basearch/
-    gpgcheck=0
-    repo_gpgcheck=0
-    enabled=1
-    
-2. Update the repository and install the CouchDB package ::
-
-    $ sudo yum -y install epel-release && sudo yum -y install couchdb
-
-RHEL 8
-++++++
-
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
-
-    [bintray--apache-couchdb-rpm]
-    name=bintray--apache-couchdb-rpm
-    baseurl=http://apache.bintray.com/couchdb-rpm/el8/$basearch/
-    gpgcheck=0
-    repo_gpgcheck=0
-    enabled=1
-
-2. Update the repository and install the CouchDB package ::
-
-    $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
 Docker
 ++++++
@@ -246,6 +196,11 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 |
+|
+|
+|
+|
+|
 
 .. image:: ../../Resources/OpenMapTiles_Configure5.png
     :alt: OpenMapTiles Setup Screen
@@ -253,10 +208,42 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
 7. Click **Click here to get the download key**. You will be taken to the OpenMapTiles site. It will walk you through signing up for a free account if you don't already have one and then provide you with a **DOWNLOAD KEY**. Copy and paste it into the form and click **START DOWNLOAD**.
 
-8. Once the download has completed, click **PUBLISH**.
+8. Once the download has completed, click **OPEN SERVER**.
 
 Install Web Server
 ------------------
 
 You can run whichever webserver you like but we will be using Apache2 for this example.
+
+Ubuntu/Debian
++++++++++++++
+
+1. Run the following command to install **Apache2** ::
+
+    $ sudo apt install -y httpd
+
+2. Change directory to `/var/www/html` and download EmComMap ::
+
+    $ cd /var/www/html
+    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+
+3. Restart the Apache2 webserver ::
+
+    $ sudo apache2ctl restart
+
+CentOS
+++++++
+
+1. Run the following commands to update the **httpd** package index and install **httpd** (Apache2) ::
+
+    $ sudo yum update httpd
+    $ sudo yum install httpd
+
+2. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
+    
+    $ sudo systemctl start httpd
+    
+3. Confirm Apache is running ::
+    
+    $ sudo systemctl status httpd
 
