@@ -202,10 +202,6 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
-.. image:: ../../Resources/OpenMapTiles_Configure5.png
-    :alt: OpenMapTiles Setup Screen
-    :align: right
-
 7. Click **Click here to get the download key**. You will be taken to the OpenMapTiles site. It will walk you through signing up for a free account if you don't already have one and then provide you with a **DOWNLOAD KEY**. Copy and paste it into the form and click **START DOWNLOAD**.
 
 8. Once the download has completed, click **OPEN SERVER**.
@@ -246,4 +242,31 @@ CentOS
 3. Confirm Apache is running ::
     
     $ sudo systemctl status httpd
+
+EmComMap Configuration
+++++++++++++++++++++++
+
+1. Open the file `/var/www/html/EmComMap/html/config.js` in a text editor ::
+
+    $ sudo vim /var/www/html/EmComMap/html/config.js
+    
+2. Towards the top of the file you will see these lines ::
+
+    const RUN_LOCATION = "local";
+
+    if(RUN_LOCATION == "my-install") {
+        var TILE_SERVER = 'http://<host>:8080/styles/klokantech-basic/{z}/{x}/{y}.png';
+        var TILE_SERVER_OPTS = {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Server courtesy of <a href="https://openmaptiles.com/">OpenMapTiles</a>'
+        };
+        var DEFAULT_DB_HOST = '<host>';
+        
+3. Change the **RUN_LOCATION** string to `my-install` instead of `local`
+
+4. Change both instances of `<host>` to the hostname or IP of your EmComMap server.
+
+.. note:: If you have the CouchDB server on a different computer, then you will need to use that computer's address for **DEFAULT_DB_HOST**.
 
