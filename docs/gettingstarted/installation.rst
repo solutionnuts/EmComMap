@@ -203,16 +203,18 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
     This will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open.
 
+.. image:: ../../Resources/OpenMapTiles_Configure1.png
+    :alt: OpenMapTiles Setup Screen
+    :align: right
+
 4. Open a web browser and navigate to **http://<hostname or IP>:8080/** and click **START**
 
-.. image:: ../../Resources/OpenMapTiles_Configure1.png
+.. image:: ../../Resources/OpenMapTiles_Configure2.png
     :alt: OpenMapTiles Setup Screen
     :align: right
     
 5. Select the region that you want to install the tiles for and then click **CONTINUE**.  Most regions will require you to setup a free account on the `OpenMapTiles website<https://openmaptiles.org>`_
 
-.. image:: ../../Resources/OpenMapTiles_Configure2.png
-    :alt: OpenMapTiles Setup Screen
-    :align: left
+
     
 6. 
