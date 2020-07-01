@@ -205,13 +205,13 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
 4. Open a web browser and navigate to **http://<hostname or IP>:8080/** and click **START**
 
-.. image:: ../Resources/OpenMapTiles_Configure1.png
+.. image:: ../../Resources/OpenMapTiles_Configure1.png
     :alt: OpenMapTiles Setup Screen
     :align: right
     
 5. Select the region that you want to install the tiles for and then click **CONTINUE**.  Most regions will require you to setup a free account on the `OpenMapTiles website<https://openmaptiles.org>`_
 
-.. image:: ../Resources/OpenMapTiles_Configure2.png
+.. image:: ../../Resources/OpenMapTiles_Configure2.png
     :alt: OpenMapTiles Setup Screen
     :align: left
     
