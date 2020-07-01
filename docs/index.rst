@@ -42,5 +42,12 @@ emcommap@gmail.com
 
 .. toctree::
    :maxdepth: 1
+   :caption: Special Thanks
+   :hidden:
+   
+   thanks
+   
+.. toctree::
+   :maxdepth: 1
    :caption: Appendix
    :hidden:
