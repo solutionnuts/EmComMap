@@ -148,12 +148,14 @@ CentOS
 1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
 
     ...
+    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
     enabled=1
+    
     ...
     
 2. Update the repository and install the CouchDB package
@@ -168,12 +170,14 @@ RHEL 7
 1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
 
     ...
+    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el6/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
     enabled=1
+    
     ...
     
 2. Update the repository and install the CouchDB package
@@ -188,12 +192,14 @@ RHEL 7
 1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
 
     ...
+    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el7/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
     enabled=1
+    
     ...
     
 2. Update the repository and install the CouchDB package
@@ -208,12 +214,14 @@ RHEL 8
 1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
 
     ...
+    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el8/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
     enabled=1
+    
     ...
     
 2. Update the repository and install the CouchDB package
