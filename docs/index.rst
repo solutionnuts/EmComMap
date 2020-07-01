@@ -1,4 +1,4 @@
-.. image:: ../Resources/EmComMap_Logo.png
+.. image:: _images/EmComMap_Logo.png
    :alt: EmComMap
    :align: right
 
