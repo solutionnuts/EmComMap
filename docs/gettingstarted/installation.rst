@@ -202,6 +202,10 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 
+.. image:: ../../Resources/OpenMapTiles_Configure5.png
+    :alt: OpenMapTiles Setup Screen
+    :align: right
+    
 7. Click **Click here to get the download key**. You will be taken to the OpenMapTiles site. It will walk you through signing up for a free account if you don't already have one and then provide you with a **DOWNLOAD KEY**. Copy and paste it into the form and click **START DOWNLOAD**.
 
 8. Once the download has completed, click **OPEN SERVER**.
@@ -242,6 +246,11 @@ CentOS
 3. Confirm Apache is running ::
     
     $ sudo systemctl status httpd
+
+Docker
+++++++
+
+**COMING SOON**
 
 EmComMap Configuration
 ++++++++++++++++++++++
