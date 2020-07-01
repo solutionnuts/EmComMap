@@ -147,44 +147,38 @@ CentOS
 
 1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
 
-    **[bintray--apache-couchdb-rpm]**
-    name=bintray--apache-couchdb-rpm
-    baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
-    gpgcheck=0
-    repo_gpgcheck=0
-    enabled=1
+        [bintray--apache-couchdb-rpm]
+        name=bintray--apache-couchdb-rpm
+        baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
+        gpgcheck=0
+        repo_gpgcheck=0
+        enabled=1
     
-2. Update the repository and install the CouchDB package
+2. Update the repository and install the CouchDB package ::
 
-    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+       $ sudo yum -y install epel-release && sudo yum -y install couchdb
     
 RHEL 7
 ++++++
 
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
 
-    ``[bintray--apache-couchdb-rpm]
+    [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el6/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
-    enabled=1``
-    
-    ...
-    
-2. Update the repository and install the CouchDB package
+    enabled=1
 
-    ::
+2. Update the repository and install the CouchDB package ::
 
     $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
 RHEL 7
 ++++++
 
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
 
-    ...
-    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el7/$basearch/
@@ -192,33 +186,23 @@ RHEL 7
     repo_gpgcheck=0
     enabled=1
     
-    ...
-    
-2. Update the repository and install the CouchDB package
-
-    ::
+2. Update the repository and install the CouchDB package ::
 
     $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
 RHEL 8
 ++++++
 
-1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` ::
 
-    ...
-    
     [bintray--apache-couchdb-rpm]
     name=bintray--apache-couchdb-rpm
     baseurl=http://apache.bintray.com/couchdb-rpm/el8/$basearch/
     gpgcheck=0
     repo_gpgcheck=0
     enabled=1
-    
-    ...
-    
-2. Update the repository and install the CouchDB package
 
-    ::
+2. Update the repository and install the CouchDB package ::
 
     $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
