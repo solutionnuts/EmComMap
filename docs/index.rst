@@ -19,9 +19,9 @@ emcommap@gmail.com
 |
 |
 
-`EmComMap Home Page <http://app.emcommap.org/EmComMap/html/index.html>`_
+`EmComMap Home Page <http://emcommap.org>`_
 
-`Demo Server <http://emcommap.org>`_
+`Demo Server <http://app.emcommap.org/EmComMap/html/index.html>`_
 
 .. toctree::
    :maxdepth: 1
