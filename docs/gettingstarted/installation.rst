@@ -199,9 +199,9 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
 3. Launch a Docker container with the following command ::
 
-    $ docker run -dit --name (disiredservername) -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
-    
-| This will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open.
+    $ docker run -dit --name <disiredservername> -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
+
+    | This command **MUST** be run from the directory you created above. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open.
 
 .. image:: ../../Resources/OpenMapTiles_Configure1.png
     :alt: OpenMapTiles Setup Screen
