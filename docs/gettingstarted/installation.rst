@@ -53,34 +53,174 @@ Debian 9 (stretch)
 Debian 10 (buster)
 ++++++++++++++++++
 
+1. Start by enabling the Apache CouchDB package repository.
 
+    ::
+
+    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    $ echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    
+2. Install the CouchDB GPG key
+
+    ::
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    
+3. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo apt update
+    $ sudo apt install -y couchdb
 
 Ubuntu 16.04 (xenial)
 +++++++++++++++++++++
 
+1. Start by enabling the Apache CouchDB package repository.
 
+    ::
+
+    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    $ echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    
+2. Install the CouchDB GPG key
+
+    ::
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    
+3. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo apt update
+    $ sudo apt install -y couchdb
 
 Ubuntu 18.04 (bionic)
 +++++++++++++++++++++
 
+1. Start by enabling the Apache CouchDB package repository.
 
+    ::
+
+    $ sudo apt-get install -y gnupg ca-certificates
+    $ echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    
+2. Install the CouchDB GPG key
+
+    ::
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    
+3. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo apt update
+    $ sudo apt install -y couchdb
 
 Ubuntu 20.04 (focal)
 ++++++++++++++++++++
 
+1. Start by enabling the Apache CouchDB package repository.
 
-CentOS/RHEL 6
-+++++++++++++
+    ::
 
+    $ sudo apt-get install -y gnupg ca-certificates
+    $ echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    
+2. Install the CouchDB GPG key
 
-CentOS/RHEL 7
-+++++++++++++
+    ::
 
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    
+3. Update the repository and install the CouchDB package
 
-CentOS/RHEL 8
-+++++++++++++
+    ::
 
+    $ sudo apt update
+    $ sudo apt install -y couchdb
 
+CentOS
+++++++
+
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+
+    ::
+
+    **[bintray--apache-couchdb-rpm]**
+    name=bintray--apache-couchdb-rpm
+    baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
+    gpgcheck=0
+    repo_gpgcheck=0
+    enabled=1
+    
+2. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+    
+RHEL 7
+++++++
+
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+
+    ::
+
+    **[bintray--apache-couchdb-rpm]**
+    name=bintray--apache-couchdb-rpm
+    baseurl=http://apache.bintray.com/couchdb-rpm/el6/$basearch/
+    gpgcheck=0
+    repo_gpgcheck=0
+    enabled=1
+    
+2. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+
+RHEL 7
+++++++
+
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+
+    ::
+
+    **[bintray--apache-couchdb-rpm]**
+    name=bintray--apache-couchdb-rpm
+    baseurl=http://apache.bintray.com/couchdb-rpm/el7/$basearch/
+    gpgcheck=0
+    repo_gpgcheck=0
+    enabled=1
+    
+2. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+
+RHEL 8
+++++++
+
+1. Start by enabling the Apache CouchDB package repository. Place the following text into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo``
+
+    ::
+
+    **[bintray--apache-couchdb-rpm]**
+    name=bintray--apache-couchdb-rpm
+    baseurl=http://apache.bintray.com/couchdb-rpm/el8/$basearch/
+    gpgcheck=0
+    repo_gpgcheck=0
+    enabled=1
+    
+2. Update the repository and install the CouchDB package
+
+    ::
+
+    $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
 Docker
 ++++++
