@@ -23,7 +23,7 @@ emcommap@gmail.com
 
 `Demo Server <http://app.emcommap.org/EmComMap/html/index.html>`_
 
-      * `Email Dan <emcommap@gmail.com>`_ for access to the demo server
+      * You should be able to use *guest* for the username and password. If you would like a personal account, `Email Dan <emcommap@gmail.com>`_ for access to the demo server
 
 .. toctree::
    :maxdepth: 1
@@ -35,8 +35,10 @@ emcommap@gmail.com
 
 .. toctree::
    :maxdepth: 1
-   :caption: How-to Guides
+   :caption: Operation
    :hidden:
+
+   operation/operation
 
 .. toctree::
    :maxdepth: 1
