@@ -17,11 +17,11 @@ Accessing & Logging In
 
 2. Enter your username and password.
 
-   *You may be able to log in as guest with password guest. If you would like personal credentials, contact the host administrator.*
-
 3. Select your desired database and map tile servers. Unless you have access to a different host database and map tile server, use the default database host in **Remote host** and **Tile server URL**.
 
 4. Click **Login**
+
+.. note:: You may be able to log in as **guest** with password **guest**. If you would like personal credentials, contact the host administrator.
 
 .. note:: If you have difficulty logging in, take note of any error messages that appear on the javascript console within your browser and forward to the app developers emcommap@gmail.com.
 
@@ -52,4 +52,61 @@ Create a New Incident
 
 To create a new incident, use the **Define new incident** area.
 
-1. 
+Select an existing region if applicable or define a new region on the map.
+
+Existing Region
+"""""""""""""""
+
+1. Click the **Select existing region** dropdown and choose an existing region
+
+2. Click on the **Incident start** to select the start time
+
+3. **OPTIONAL** Click on **Incident end** to selec the end time. An ongoing incident has no end time specified or you can specify an end time that is far enough in the future to likely postdate the incident.
+
+4. Give the incident a name (e.g. 20181114 Burbank Fire)
+
+5. Click **Create region/incident and show EmComMap** button
+
+New Region
+""""""""""
+
+1. Scroll down to the map area and click the box with the filled black square on the left
+
+2. Drag a rectangle on the map.
+
+.. note:: If you wish to edit the rectangle once created, press the button that has the pen in the unfilled rectangle. If you wish to delete the rectangle, click the trashcan button when the rectangle is selected.
+
+3. Give the region a name in the **New region name** field
+
+   .. image:: _images/emcommap_incident_startdate.png
+      :alt: EmComMap Incident Start Date
+      :align: right
+
+4. Click on the **Incident start** to select the start time
+
+|
+|
+|
+|
+|
+|
+|
+
+   .. image:: _images/emcommap_incident_enddate.png
+      :alt: EmComMap Incident Start Date
+      :align: right
+      
+5. **OPTIONAL** Click on **Incident end** to selec the end time. An ongoing incident has no end time specified or you can specify an end time that is far enough in the future to likely postdate the incident.
+
+|
+|
+|
+|
+|
+|
+|
+
+6. Give the incident a name (e.g. 20181114 Burbank Fire)
+
+7. Click **Create region/incident and show EmComMap** button
+
