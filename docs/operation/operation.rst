@@ -9,4 +9,8 @@ EmComMap has been tested on Chrome, Firefox, Safari and the new Microsoft Edge b
 Accessing & Logging In
 ----------------------
 
+   .. image:: _images/emcommap_login_screen.png
+      :alt: Firmware Install Connections
+      :align: right
+
 1. Open your web broswer and go to **http://<address or IP>:8080/** 
