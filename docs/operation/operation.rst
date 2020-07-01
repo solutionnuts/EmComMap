@@ -91,6 +91,13 @@ New Region
 |
 |
 |
+|
+|
+|
+|
+|
+|
+|
 
    .. image:: _images/emcommap_incident_enddate.png
       :alt: EmComMap Incident Start Date
@@ -98,6 +105,13 @@ New Region
       
 5. **OPTIONAL** Click on **Incident end** to selec the end time. An ongoing incident has no end time specified or you can specify an end time that is far enough in the future to likely postdate the incident.
 
+|
+|
+|
+|
+|
+|
+|
 |
 |
 |
