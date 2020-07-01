@@ -213,7 +213,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     :alt: OpenMapTiles Setup Screen
     :align: right
     
-5. Select the region that you want to install the tiles for and then click **CONTINUE**.  Most regions will require you to setup a free account on the `OpenMapTiles website<https://openmaptiles.org>`_
+5. Select the region that you want to install the tiles for and then click **CONTINUE**.  Most regions will require you to setup a free account on the `OpenMapTiles website <https://openmaptiles.org>`_
 
 
     
