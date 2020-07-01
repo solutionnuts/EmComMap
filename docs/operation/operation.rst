@@ -21,6 +21,13 @@ Accessing & Logging In
 
 4. Click **Login**
 
+|
+|
+|
+|
+|
+|
+
 .. note:: You may be able to log in as **guest** with password **guest**. If you would like personal credentials, contact the host administrator.
 
 .. note:: If you have difficulty logging in, take note of any error messages that appear on the javascript console within your browser and forward to the app developers emcommap@gmail.com.
@@ -95,9 +102,6 @@ New Region
 |
 |
 |
-|
-|
-|
 
    .. image:: _images/emcommap_incident_enddate.png
       :alt: EmComMap Incident Start Date
@@ -105,12 +109,6 @@ New Region
       
 5. **OPTIONAL** Click on **Incident end** to selec the end time. An ongoing incident has no end time specified or you can specify an end time that is far enough in the future to likely postdate the incident.
 
-|
-|
-|
-|
-|
-|
 |
 |
 |
