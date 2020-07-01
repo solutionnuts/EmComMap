@@ -197,9 +197,9 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     $ mkdir openmaptiles       (or whatever you want to name the directory)
     $ cd openmaptiles
     
-3. Launch a Docker container with the following command ::
+3. Launch a Docker container with the following command
 
-    $ docker run -dit --name (disiredservername) -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
+    | $ docker run -dit --name (disiredservername) -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
     
     This will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open.
 
@@ -218,7 +218,6 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 |
 |
 |
-|
 
 .. image:: ../../Resources/OpenMapTiles_Configure2.png
     :alt: OpenMapTiles Setup Screen
@@ -226,9 +225,6 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
 5. Select the region that you want to install the tiles for and then click **CONTINUE**.  Most regions will require you to setup a free account on the `OpenMapTiles website <https://openmaptiles.org>`_
 
-|
-|
-|
 |
 |
 |
