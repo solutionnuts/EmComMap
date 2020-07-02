@@ -254,6 +254,15 @@ CentOS
 3. Confirm Apache is running ::
     
     $ sudo systemctl status httpd
+    
+4. Change directory to ``/var/www/html`` and download EmComMap ::
+
+    $ cd /var/www/html
+    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+
+5. Restart the Apache2 webserver ::
+
+    $ sudo apache2ctl restart
 
 Docker
 ++++++
