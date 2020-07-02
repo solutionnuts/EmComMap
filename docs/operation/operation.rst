@@ -121,7 +121,7 @@ New Region
 
 7. Click **Create region/incident and show EmComMap** button.  The new region will be defined in the database along with the new incident.
 
-Incident Workflow
+Incident Overview
 +++++++++++++++++
 
 Once the EmComMap application has loaded, your screen should look something like this:
@@ -130,7 +130,13 @@ Once the EmComMap application has loaded, your screen should look something like
       :alt: EmComMap Incident Main Page
       :align: center
       
-At the top shows who you are and the current incident. To change incident, click on the incident description. You may enter a tactical ID by pressing the “Change” button; you can alter it as often as needed. The left side displays a map of the incident’s region, with its rectangular border outlined in red. Locations outside this region and message traffic relevant to them are not displayed, allowing multiple unrelated incidents to be operationally segregated. If you wish to view multiple such regions simultaneously, then define a new region which contains all the regions of interest and then create a new incident based on that new region.
+At the top shows who you are and the current incident. To change incident, click on the incident description. You may enter a **Tactical ID** by pressing the **Change** button. You may alter it at anytime.
 
-The map shows various locations with associated markers. Marker symbols are shown in Table 1. You may zoom into and out of the map using the + and – buttons on the upper left, and you may use the mouse to pan (some trackpad gestures will also allow zooming). Clicking on or hovering over the various markers will either transfer their information to the right-hand panel or show information as a tooltip near the pointer position.
+The left side displays a map of the incident’s region outlined in red. Locations outside this region and message traffic relevant to them are not displayed, allowing multiple unrelated incidents to be operationally segregated. If you wish to view multiple such regions simultaneously, then define a new region which contains all the regions of interest and then create a new incident based on that new region.
+
+   .. image:: _images/emcommap_incident_table1.png
+      :alt: EmComMap Incident Icon Table
+      :align: right
+
+The map shows various locations with associated markers. Marker symbols are shown in **Table 1**. You may zoom into and out of the map using the **PLUS** and **MINUS** buttons on the upper left corner of the map. You may also use the mouse to pan (some trackpad gestures will also allow zooming). Clicking on or hovering over the various markers will either transfer their information to the right-hand panel or show information as a tooltip near the pointer position.
 
