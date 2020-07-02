@@ -168,4 +168,15 @@ The left side displays a map of the incident’s region outlined in red. Locatio
 
 The map shows various locations with associated markers. Marker symbols are shown in **Table 1**. You may zoom into and out of the map using the **PLUS** and **MINUS** buttons on the upper left corner of the map. You may also use the mouse to pan (some trackpad gestures will also allow zooming). Clicking on or hovering over the various markers will either transfer their information to the right-hand panel or show information as a tooltip near the pointer position.
 
-On the right-hand side, there are four tabbed panes, **Traffic**, **Operators**, **Locations**, and **Incident**. In the figure above, the **Traffic** pane is displayed. You can see existing traffic in the table, with the text color coded by message precedence ("green" => "<font color = 'green'>" = ROUTINE, "yellow" => "<font color = 'yellow'>" = PRIORITY, "red" => "<font color = 'red'>" = EMERGENCY). You may send traffic of your own using the box at the bottom, which contains the Submit traffic button. If sending emergency traffic, you will be prompted to confirm prior to sending.
+On the right-hand side, there are four tabbed panes, **Traffic**, **Operators**, **Locations**, and **Incident**. In the figure above, the **Traffic** pane is displayed. You can see existing traffic in the table, with the text color coded by message precedence (green = ROUTINE, yellow = PRIORITY, red = EMERGENCY). You may send traffic of your own using the box at the bottom, which contains the Submit traffic button. If sending emergency traffic, you will be prompted to confirm prior to sending.
+
+Below is an example of message information filled out prior to pressing the submit button:
+
+   .. image:: _images/emcommap_incident_traffic.png
+      :alt: EmComMap Incident Traffic
+      :align: center
+
+This message is being sent to the attention of **kk6da**, though everyone can view it (like sending voice traffic by radio). If you intend traffic for all operators, then leave the **To** field blank. The **Related location** is used to specify the label of a location about which the traffic is related. Once you press the **Submit traffic** button, the traffic should be displayed in the table above. This is the basic method for sending and receiving traffic.
+
+.. note:: To prevent capitalization issues in comparisons, operator identifiers (i.e. callsigns and tactical calls) are converted to lower case. Location labels, though, are not converted; they are typically in upper case (e.g. CHH).
+
