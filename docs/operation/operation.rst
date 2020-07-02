@@ -66,13 +66,41 @@ Existing Region
 
 1. Click the **Select existing region** dropdown and choose an existing region
 
+   .. image:: _images/emcommap_incident_startdate.png
+      :alt: EmComMap Incident Start Date
+      :align: right
+
 2. Click on the **Incident start** to select the start time
 
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+   .. image:: _images/emcommap_incident_enddate.png
+      :alt: EmComMap Incident End Date
+      :align: right
+      
 3. **OPTIONAL** Click on **Incident end** to selec the end time. An ongoing incident has no end time specified or you can specify an end time that is far enough in the future to likely postdate the incident.
+
+|
+|
+|
+|
+|
+|
 
 4. Give the incident a name (e.g. 20181114 Burbank Fire)
 
-5. Click **Create region/incident and show EmComMap** button
+5. Click **Create region/incident and show EmComMap** button.
 
 New Region
 """"""""""
@@ -140,3 +168,4 @@ The left side displays a map of the incident’s region outlined in red. Locatio
 
 The map shows various locations with associated markers. Marker symbols are shown in **Table 1**. You may zoom into and out of the map using the **PLUS** and **MINUS** buttons on the upper left corner of the map. You may also use the mouse to pan (some trackpad gestures will also allow zooming). Clicking on or hovering over the various markers will either transfer their information to the right-hand panel or show information as a tooltip near the pointer position.
 
+On the right-hand side, there are four tabbed panes, **Traffic**, **Operators**, **Locations**, and **Incident**. In the figure above, the **Traffic** pane is displayed. You can see existing traffic in the table, with the text color coded by message precedence (:greentext:`green` = ROUTINE, :yellowtext:`yellow` = PRIORITY, :redtext:`red` = EMERGENCY). You may send traffic of your own using the box at the bottom, which contains the Submit traffic button. If sending emergency traffic, you will be prompted to confirm prior to sending.
