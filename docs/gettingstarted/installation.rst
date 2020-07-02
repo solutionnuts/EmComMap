@@ -296,3 +296,7 @@ EmComMap Configuration
 
 .. note:: If you have the CouchDB server on a different computer, then you will need to use that computer's address for **DEFAULT_DB_HOST**.
 
+.. note:: If your deployment is for testing only set the value of **TEST_MODE** to ``true`` in ``config.js``. This will put the text **TESTING** in bold red font at the top of the application and precede all messages with **TESTING:**. The purpose is to ensure that test traffic is not mistaken for a real-world emergency.
+
+
+
