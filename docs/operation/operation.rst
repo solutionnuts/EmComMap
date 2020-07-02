@@ -180,3 +180,16 @@ This message is being sent to the attention of **kk6da**, though everyone can vi
 
 .. note:: To prevent capitalization issues in comparisons, operator identifiers (i.e. callsigns and tactical calls) are converted to lower case. Location labels, though, are not converted; they are typically in upper case (e.g. CHH).
 
+Interacting with the Map
+++++++++++++++++++++++++
+
+The map can be panned and zoomed. Various markers are shown on the map corresponding to locations (e.g. hospitals, police, fire, operators). Some markers will display tooltip information when hovered over with the pointer. Others perform actions when clicked. For example, when you click on a location, that location’s coordinates and label are placed within various fields in the right-hand information area. Clicking on a location also selects that location for viewing only its traffic (if the location lock is unlocked to allow it). By copying information, the application attempts to discourage the typing in of callsigns and labels to prevent errors.
+
+In the upper right corner of the map is an icon for manipulating layers. Clicking on it allows you to toggle the appearance of markers for different types of locations. This also toggles the appearance of message traffic corresponding to those locations in the traffic table (see below). Removing locations and traffic not relevant to a particular operator helps reduce visual clutter and distractions from extraneous traffic. Below is an example of a map region with the fire markers present (left) and removed (right), also showing the map layer selector tool.
+
+   .. image:: _images/emcommap_incident_maplegend.png
+      :alt: EmComMap Incident Map Legend
+      :align: right
+
+.. note:: The map coverage is limited to the area covered by the map tile server. For instance, if the map tile server only has the map tiles for Montana loaded, then the coverage area will be limited to Montana and just a little outside the borders as seen in the image. Check with the host of the map tile server for details on server coverage.
+
