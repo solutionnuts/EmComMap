@@ -126,6 +126,11 @@ CentOS
 
        $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
+Raspberry OS
+++++++++++++
+
+**COMING SOON!**
+
 Docker
 ++++++
 
@@ -264,10 +269,43 @@ CentOS
 
     $ sudo apache2ctl restart
 
+Raspberry OS
+++++++++++++
+
+1. Update the available packages ::
+
+    $ sudo apt update
+    
+2. Install the **Apache2** package ::
+
+    $ sudo apt install apache2 -y
+
+.. image:: _images/apache_it_works.png
+    :alt: Apache Test Page
+    :align: right
+    
+3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
+
+|
+|
+|
+|
+|
+|
+
+4. Change directory to ``/var/www/html`` and download EmComMap ::
+
+    $ cd /var/www/html
+    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+
+5. Restart the Apache2 webserver ::
+
+    $ sudo apache2ctl restart
+
 Docker
 ++++++
 
-**COMING SOON**
+**COMING SOON!**
 
 EmComMap Configuration
 ----------------------
