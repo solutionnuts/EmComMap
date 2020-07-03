@@ -292,6 +292,9 @@ Raspberry OS
 |
 |
 |
+|
+|
+|
 
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
