@@ -280,7 +280,7 @@ Raspberry OS
 
     $ sudo apt install apache2 -y
 
-.. image:: _images/apache_it_works.png
+.. image:: _images/apache_works.png
     :alt: Apache Test Page
     :align: right
     
