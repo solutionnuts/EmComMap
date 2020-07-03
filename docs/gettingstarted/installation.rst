@@ -109,6 +109,8 @@ Ubuntu 20.04 (focal)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
+    
+ 4. 
 
 CentOS
 ++++++
