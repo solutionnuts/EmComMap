@@ -78,6 +78,7 @@ Ubuntu 16.04 (xenial)
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
+    :width: 480
     :align: right
     
  4. When prompted, configure CouchDB for **Standalone** operation.
@@ -95,6 +96,7 @@ Ubuntu 16.04 (xenial)
  
 .. image:: _images/ubuntu-couchdb-install-2.png
     :alt: Ubuntu CouchDB Bind Address
+    :width: 480
     :align: right
     
 5. Set **Bind** address to ``0.0.0.0``
@@ -112,6 +114,7 @@ Ubuntu 16.04 (xenial)
  
 .. image:: _images/ubuntu-couchdb-install-3.png
     :alt: Ubuntu CouchDB Admin Password
+    :width: 480
     :align: right
     
 6. Set a password for the CouchDB **Admin** account
@@ -135,6 +138,7 @@ Ubuntu 18.04 (bionic)
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
+    :width: 480
     :align: right
     
  4. When prompted, configure CouchDB for **Standalone** operation.
@@ -152,6 +156,7 @@ Ubuntu 18.04 (bionic)
  
 .. image:: _images/ubuntu-couchdb-install-2.png
     :alt: Ubuntu CouchDB Bind Address
+    :width: 480
     :align: right
     
 5. Set **Bind** address to ``0.0.0.0``
@@ -169,6 +174,7 @@ Ubuntu 18.04 (bionic)
  
 .. image:: _images/ubuntu-couchdb-install-3.png
     :alt: Ubuntu CouchDB Admin Password
+    :width: 480
     :align: right
     
 6. Set a password for the CouchDB **Admin** account
@@ -192,6 +198,7 @@ Ubuntu 20.04 (focal)
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
+    :width: 480
     :align: right
     
  4. When prompted, configure CouchDB for **Standalone** operation.
@@ -209,6 +216,7 @@ Ubuntu 20.04 (focal)
  
 .. image:: _images/ubuntu-couchdb-install-2.png
     :alt: Ubuntu CouchDB Bind Address
+    :width: 480
     :align: right
     
 5. Set **Bind** address to ``0.0.0.0``
@@ -226,6 +234,7 @@ Ubuntu 20.04 (focal)
  
 .. image:: _images/ubuntu-couchdb-install-3.png
     :alt: Ubuntu CouchDB Admin Password
+    :width: 480
     :align: right
     
 6. Set a password for the CouchDB **Admin** account
