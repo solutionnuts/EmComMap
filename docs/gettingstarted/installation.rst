@@ -286,10 +286,11 @@ Raspberry OS
     :alt: Apache Test Page
     :align: right
     
-3. Test the install by opening a web browser and going to ``http://<hostname or IP>``
+3. Test the install by opening a web browser and going to
 
-|
-|
+``http://<hostname or IP>``
+
+    You should see this page.
 |
 |
 |
