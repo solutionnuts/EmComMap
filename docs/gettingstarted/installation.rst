@@ -528,6 +528,16 @@ CouchDB Configuration
 
 6. Click **Main Config** then scroll down to the **CORS** section
 
+7. In the **CORS** section, click on the **Value** to the right of **Headers** to edit that entry
+
+8. To the end of that entry, add ``, x-csrf-token`` and click the green check mark to save
+
+|
+|
+|
+|
+|
+
 EmComMap Configuration
 ----------------------
 
