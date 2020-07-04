@@ -520,13 +520,12 @@ CouchDB Configuration
 |
 |
 |
+|
 
 .. image:: _images/couchdb-configure-4.png
     :alt: CouchDB CORS All Domains
     :width: 480
     :align: right
-
-|
 
 6. Click **Main Config** then scroll down to the **CORS** section
 
@@ -534,7 +533,6 @@ CouchDB Configuration
 
 8. To the end of that entry, add ``, x-csrf-token`` and click the green check mark to save
 
-|
 |
 
 EmComMap Configuration
