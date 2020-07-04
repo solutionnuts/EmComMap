@@ -24,6 +24,7 @@ If you are running one of the following versions of Linux, the easiest way to in
 * Ubuntu 18.04 (bionic)
 * Ubuntu 20.04 (focal)
 * CentOS
+* Raspberry OS
 
 Debian 9 (stretch)
 ++++++++++++++++++
@@ -463,6 +464,86 @@ Docker
 ++++++
 
 **COMING SOON!**
+
+CouchDB Configuration
+---------------------
+
+1. Open a web browser and go to ``http://<address or IP>:5984/_utils/``
+
+.. image:: _images/couchdb-configure-1.png
+    :alt: CouchDB Fauxton Login Screen
+    :width: 480
+    :align: right
+    
+2. Login to the Fauxton CouchDB web administration console using the account **admin** and the password you set during install.
+
+|
+|
+|
+|
+|
+|
+
+3. On the left side click on the **Configure** link (gear icon)
+
+.. image:: _images/couchdb-configure-2.png
+    :alt: CouchDB Configure Screen
+    :width: 480
+    :align: right
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+4. Click on **CORS** and click **Enable**
+
+.. image:: _images/couchdb-configure-3.png
+    :alt: CouchDB CORS All Domains
+    :width: 480
+    :align: right
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+.. image:: _images/couchdb-configure-3.png
+    :alt: CouchDB CORS All Domains
+    :width: 480
+    :align: right
+
+5. Click **All Domains**
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+.. image:: _images/couchdb-configure-4.png
+    :alt: CouchDB CORS All Domains
+    :width: 480
+    :align: right
+
+6. Click **Main Config** then scroll down to the **CORS** section
 
 EmComMap Configuration
 ----------------------
