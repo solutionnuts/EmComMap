@@ -482,7 +482,6 @@ CouchDB Configuration
 |
 |
 |
-|
 
 3. On the left side click on the **Configure** link (gear icon)
 
@@ -491,23 +490,7 @@ CouchDB Configuration
     :width: 480
     :align: right
 
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
 4. Click on **CORS** and click **Enable**
-
-.. image:: _images/couchdb-configure-3.png
-    :alt: CouchDB CORS All Domains
-    :width: 480
-    :align: right
 
 |
 |
