@@ -75,6 +75,46 @@ Ubuntu 16.04 (xenial)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
+    
+.. image:: _images/ubuntu-couchdb-install-1.png
+    :alt: Ubuntu CouchDB Standalone
+    :align: right
+    
+ 4. When prompted, configure CouchDB for **Standalone** operation.
+ 
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-2.png
+    :alt: Ubuntu CouchDB Bind Address
+    :align: right
+    
+5. Set **Bind** address to ``0.0.0.0``
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-3.png
+    :alt: Ubuntu CouchDB Admin Password
+    :align: right
+    
+6. Set a password for the CouchDB **Admin** account
 
 Ubuntu 18.04 (bionic)
 +++++++++++++++++++++
@@ -92,6 +132,46 @@ Ubuntu 18.04 (bionic)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
+    
+.. image:: _images/ubuntu-couchdb-install-1.png
+    :alt: Ubuntu CouchDB Standalone
+    :align: right
+    
+ 4. When prompted, configure CouchDB for **Standalone** operation.
+ 
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-2.png
+    :alt: Ubuntu CouchDB Bind Address
+    :align: right
+    
+5. Set **Bind** address to ``0.0.0.0``
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-3.png
+    :alt: Ubuntu CouchDB Admin Password
+    :align: right
+    
+6. Set a password for the CouchDB **Admin** account
 
 Ubuntu 20.04 (focal)
 ++++++++++++++++++++
@@ -110,7 +190,45 @@ Ubuntu 20.04 (focal)
     $ sudo apt update
     $ sudo apt install -y couchdb
     
- 4. 
+.. image:: _images/ubuntu-couchdb-install-1.png
+    :alt: Ubuntu CouchDB Standalone
+    :align: right
+    
+ 4. When prompted, configure CouchDB for **Standalone** operation.
+ 
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-2.png
+    :alt: Ubuntu CouchDB Bind Address
+    :align: right
+    
+5. Set **Bind** address to ``0.0.0.0``
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-3.png
+    :alt: Ubuntu CouchDB Admin Password
+    :align: right
+    
+6. Set a password for the CouchDB **Admin** account
 
 CentOS
 ++++++
