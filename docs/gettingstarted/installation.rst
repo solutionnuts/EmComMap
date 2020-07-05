@@ -566,6 +566,7 @@ Create Databases
 
 14. Create another database using the same options called ``emcommap_attachments``
 
+
 15. Open the **emcommap** database by clicking on it.
 
 
@@ -594,6 +595,7 @@ Create Users
     
 21. Paste in the following inbetween the ``{}`` overwriting what is already in the document
 
+|
 |
 |
 |
