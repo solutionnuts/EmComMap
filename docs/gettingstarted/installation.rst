@@ -566,9 +566,9 @@ Create Databases
 
 14. Create another database using the same options called ``emcommap_attachments``
 
+|
 
 15. Open the **emcommap** database by clicking on it.
-
 
 .. image:: _images/couchdb-configure-databasepermissions.png
     :alt: CouchDB Database Permissions
@@ -587,28 +587,19 @@ Create Users
 19. Click on the **_users** database to open
 
 20. Click on the green **Create Document** button on the top-right of the page
-
-.. image:: _images/couchdb-configure-createusers.png
-    :alt: CouchDB Create Users
-    :width: 480
-    :align: right
     
-21. Paste in the following inbetween the ``{}`` overwriting what is already in the document
-
-|
-|
-|
-|
-|
-|
-|
-::
+21. Paste in the following inbetween the ``{}`` overwriting what is already in the document ::
 
     "_id": "org.couchdb.user:username",  
     "name": "name_of_user",  
     "type": "user",  
     "roles": [],  
     "password": "plaintext_password"  
+
+.. image:: _images/couchdb-configure-createusers.png
+    :alt: CouchDB Create Users
+    :width: 480
+    :align: right
     
 22. Change ``username`` to the desired username of the user
 
