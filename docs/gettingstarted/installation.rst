@@ -533,7 +533,80 @@ CouchDB Configuration
 
 8. To the end of that entry, add ``, x-csrf-token`` and click the green check mark to save
 
+.. image:: _images/couchdb-verifyinstall.png
+    :alt: CouchDB Verify Installation
+    :width: 480
+    :align: right
+    
+9. Verify CouchDB installation by clicking on the **Verify** menu icon on the left and then click **Verify Installation**
+
+Create Databases
+++++++++++++++++
+
+.. image:: _images/couchdb-configure-5.png
+    :alt: CouchDB Create Database
+    :width: 480
+    :align: right
+    
+10. Click on the **Databases** menu icon on the left then click on **Create Database** on the top-left of the page
+
+11. Enter ``emcommap`` for **Database Name**
+
+12. Select **Non-partitioned**
+
+13. Click **Create**
+
+14. Create another database using the same options called ``emcommap_attachments``
+
+15. Open the **emcommap** database by clicking on it.
+
+.. image:: _images/couchdb-configurepermissions.png
+    :alt: CouchDB Database Permissions
+    :width: 480
+    :align: right
+    
+16. Click on **Permissions** on the left
+
+17. Under **Roles**, type ``users`` into the box and click **Add Role**
+
+18. Now add the role **users** to the **emcommap_attachments** database
+
 |
+|
+
+Create Users
+++++++++++++
+
+15. Click on the **_users** database to open
+
+16. Click on the green **Create Document** button on the top-right of the page
+
+.. image:: _images/couchdb-createusers.png
+    :alt: CouchDB Create Users
+    :width: 480
+    :align: right
+    
+17. Paste in the following overwriting what is already in the document ::
+
+    {  
+    "_id": "org.couchdb.user:username",  
+    "name": "name_of_user",  
+    "type": "user",  
+    "roles": [],  
+    "password": "plaintext_password"  
+    }
+    
+18. Change ``username`` to the desired username of the user
+
+19. Change ``name_of_user`` to the desired username of the user **THESE MUST MATCH**
+
+20. Within the ``[]`` next to **roles**, type ``"users"``
+
+21. Change ``plaintext_password`` to the desired password of the user
+
+22. Click **Create Document**
+
+Repeat these steps for all desired users.
 
 EmComMap Configuration
 ----------------------
