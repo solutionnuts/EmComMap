@@ -42,11 +42,25 @@ emcommap@gmail.com
    
 .. toctree::
    :maxdepth: 1
-   :caption: Operation
+   :caption: How-To's
    :hidden:
 
    howto/incident-walkthru
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: Troubleshooting
+   :hidden:
 
+   troubleshooting
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: Glossary
+   :hidden:
+
+   glossary
+   
 .. toctree::
    :maxdepth: 1
    :caption: Special Thanks
