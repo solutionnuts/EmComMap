@@ -598,7 +598,7 @@ Create Users
 
 .. image:: _images/couchdb-configure-createusers.png
     :alt: CouchDB Create Users
-    :width: 480
+    :width: 700
     :align: center
     
 22. Change ``username`` to the desired username of the user
