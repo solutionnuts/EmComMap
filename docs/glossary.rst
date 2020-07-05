@@ -2,5 +2,5 @@
 Glossary
 --------
 
-** Coming Soon!**
+**Coming Soon!**
 
