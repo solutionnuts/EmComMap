@@ -39,6 +39,13 @@ emcommap@gmail.com
    :hidden:
 
    operation/operation
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: Operation
+   :hidden:
+
+   howto/incident-walkthru
 
 .. toctree::
    :maxdepth: 1
