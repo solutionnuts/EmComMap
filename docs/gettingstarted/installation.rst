@@ -533,6 +533,8 @@ CouchDB Configuration
 
 8. To the end of that entry, add ``, x-csrf-token`` and click the green check mark to save
 
+|
+
 .. image:: _images/couchdb-verifyinstall.png
     :alt: CouchDB Verify Installation
     :width: 480
@@ -558,9 +560,11 @@ Create Databases
 
 14. Create another database using the same options called ``emcommap_attachments``
 
+|
+
 15. Open the **emcommap** database by clicking on it.
 
-.. image:: _images/couchdb-configurepermissions.png
+.. image:: _images/couchdb-configure-databasepermissions.png
     :alt: CouchDB Database Permissions
     :width: 480
     :align: right
@@ -571,40 +575,35 @@ Create Databases
 
 18. Now add the role **users** to the **emcommap_attachments** database
 
-|
-|
-
 Create Users
 ++++++++++++
 
-15. Click on the **_users** database to open
+19. Click on the **_users** database to open
 
-16. Click on the green **Create Document** button on the top-right of the page
+20. Click on the green **Create Document** button on the top-right of the page
 
-.. image:: _images/couchdb-createusers.png
+.. image:: _images/couchdb-configure-createusers.png
     :alt: CouchDB Create Users
     :width: 480
     :align: right
     
-17. Paste in the following overwriting what is already in the document ::
+21. Paste in the following inbetween the ``{}`` overwriting what is already in the document ::
 
-    {  
     "_id": "org.couchdb.user:username",  
     "name": "name_of_user",  
     "type": "user",  
     "roles": [],  
     "password": "plaintext_password"  
-    }
     
-18. Change ``username`` to the desired username of the user
+22. Change ``username`` to the desired username of the user
 
-19. Change ``name_of_user`` to the desired username of the user **THESE MUST MATCH**
+23. Change ``name_of_user`` to the desired username of the user **THESE MUST MATCH**
 
-20. Within the ``[]`` next to **roles**, type ``"users"``
+24. Within the ``[]`` next to **roles**, type ``"users"``
 
-21. Change ``plaintext_password`` to the desired password of the user
+25. Change ``plaintext_password`` to the desired password of the user
 
-22. Click **Create Document**
+26. Click **Create Document**
 
 Repeat these steps for all desired users.
 
