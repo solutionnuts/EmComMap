@@ -533,12 +533,20 @@ CouchDB Configuration
 
 8. To the end of that entry, add ``, x-csrf-token`` and click the green check mark to save
 
+
 .. image:: _images/couchdb-configure-verifyinstall.png
     :alt: CouchDB Verify Installation
     :width: 480
     :align: right
     
 9. Verify CouchDB installation by clicking on the **Verify** menu icon on the left and then click **Verify Installation**
+
+|
+|
+|
+|
+|
+|
 
 Create Databases
 ++++++++++++++++
@@ -558,8 +566,13 @@ Create Databases
 
 14. Create another database using the same options called ``emcommap_attachments``
 
+|
+|
+|
+|
 
 15. Open the **emcommap** database by clicking on it.
+
 
 .. image:: _images/couchdb-configure-databasepermissions.png
     :alt: CouchDB Database Permissions
