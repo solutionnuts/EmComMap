@@ -286,6 +286,7 @@ CentOS
     $ sudo systemctl start couchdb
     $ sudo systemctl status couchdb
     
+
 .. image:: _images/couchdb-service-status.png
     :alt: Ubuntu CouchDB Service Status
     :width: 480
