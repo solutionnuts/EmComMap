@@ -43,9 +43,10 @@ Debian 9 (stretch)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
-    
+
+
 .. image:: _images/debian-couchdb-install-1.png
-    :alt: Ubuntu CouchDB Standalone
+    :alt: Debian CouchDB Standalone
     :width: 480
     :align: right
     
@@ -63,7 +64,7 @@ Debian 9 (stretch)
  |
  
 .. image:: _images/debian-couchdb-install-2.png
-    :alt: Ubuntu CouchDB Bind Address
+    :alt: Debian CouchDB Bind Address
     :width: 480
     :align: right
     
@@ -81,7 +82,7 @@ Debian 9 (stretch)
  |
  
 .. image:: _images/debian-couchdb-install-3.png
-    :alt: Ubuntu CouchDB Admin Password
+    :alt: Debian CouchDB Admin Password
     :width: 480
     :align: right
     
@@ -114,8 +115,9 @@ Debian 10 (buster)
     $ sudo apt update
     $ sudo apt install -y couchdb
 
+
 .. image:: _images/debian-couchdb-install-1.png
-    :alt: Ubuntu CouchDB Standalone
+    :alt: Debian CouchDB Standalone
     :width: 480
     :align: right
     
@@ -133,7 +135,7 @@ Debian 10 (buster)
  |
  
 .. image:: _images/debian-couchdb-install-2.png
-    :alt: Ubuntu CouchDB Bind Address
+    :alt: Debian CouchDB Bind Address
     :width: 480
     :align: right
     
@@ -151,7 +153,7 @@ Debian 10 (buster)
  |
  
 .. image:: _images/debian-couchdb-install-3.png
-    :alt: Ubuntu CouchDB Admin Password
+    :alt: Debian CouchDB Admin Password
     :width: 480
     :align: right
     
