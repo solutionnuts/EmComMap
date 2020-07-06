@@ -280,16 +280,16 @@ CentOS
 
     $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
+.. image:: _images/couchdb-service-status.png
+    :alt: CouchDB Service Status
+    :width: 300
+    :align: right
+
 3. Enable CouchDB to start on boot, then start CouchDB and verify it is running ::
 
     $ sudo systemctl enable couchdb
     $ sudo systemctl start couchdb
     $ sudo systemctl status couchdb
-
-.. image:: _images/couchdb-service-status.png
-    :alt: CouchDB Service Status
-    :width: 480
-    :align: center
 
 4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
 
