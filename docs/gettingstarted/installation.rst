@@ -18,13 +18,13 @@ CouchDB can be installed on Linux, Mac and Windows. CouchDB can also be installe
 
 If you are running one of the following versions of Linux, the easiest way to install is using the binary packages.
 
-* Debian 9 (stretch)
-* Debian 10 (buster)
-* Ubuntu 16.04 (xenial)
-* Ubuntu 18.04 (bionic)
-* Ubuntu 20.04 (focal)
-* CentOS
-* Raspberry OS
+* :ref:`Debian 9 (stretch)`
+* :ref:`Debian 10 (buster)`
+* :ref:`Ubuntu 16.04 (xenial)`
+* :ref:`Ubuntu 18.04 (bionic)`
+* :ref:`Ubuntu 20.04 (focal)`
+* :ref:`CentOS`
+* :ref:`Raspberry OS`
 
 Debian 9 (stretch)
 ++++++++++++++++++
@@ -280,22 +280,16 @@ CentOS
 
     $ sudo yum -y install epel-release && sudo yum -y install couchdb
 
-|
-|
-|
-|
-|
-
-.. image:: _images/couchdb-service-status.png
-    :alt: CouchDB Service Status
-    :width: 480
-    :align: right
-    
 3. Enable CouchDB to start on boot, then start CouchDB and verify it is running ::
 
     $ sudo systemctl enable couchdb
     $ sudo systemctl start couchdb
     $ sudo systemctl status couchdb
+
+.. image:: _images/couchdb-service-status.png
+    :alt: CouchDB Service Status
+    :width: 480
+    :align: center
 
 4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
 
