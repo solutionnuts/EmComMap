@@ -50,7 +50,7 @@ Debian 9 (stretch)
     :width: 480
     :align: right
     
- 4. When prompted, configure CouchDB for **Standalone** operation.
+4. When prompted, configure CouchDB for **Standalone** operation.
  
  |
  |
@@ -120,8 +120,8 @@ Debian 10 (buster)
     :alt: Debian CouchDB Standalone
     :width: 480
     :align: right
-    
- 4. When prompted, configure CouchDB for **Standalone** operation.
+
+4. When prompted, configure CouchDB for **Standalone** operation.
  
  |
  |
