@@ -42,6 +42,59 @@ Debian 9 (stretch)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
+    
+.. image:: _images/ubuntu-couchdb-install-1.png
+    :alt: Ubuntu CouchDB Standalone
+    :width: 480
+    :align: right
+    
+ 4. When prompted, configure CouchDB for **Standalone** operation.
+ 
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-2.png
+    :alt: Ubuntu CouchDB Bind Address
+    :width: 480
+    :align: right
+    
+5. Set **Bind** address to ``0.0.0.0``
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-3.png
+    :alt: Ubuntu CouchDB Admin Password
+    :width: 480
+    :align: right
+    
+6. Set a password for the CouchDB **Admin** account
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+
+7. Now you may move on to the **CouchDB Configuration** section
 
 Debian 10 (buster)
 ++++++++++++++++++
@@ -59,6 +112,59 @@ Debian 10 (buster)
 
     $ sudo apt update
     $ sudo apt install -y couchdb
+
+.. image:: _images/ubuntu-couchdb-install-1.png
+    :alt: Ubuntu CouchDB Standalone
+    :width: 480
+    :align: right
+    
+ 4. When prompted, configure CouchDB for **Standalone** operation.
+ 
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-2.png
+    :alt: Ubuntu CouchDB Bind Address
+    :width: 480
+    :align: right
+    
+5. Set **Bind** address to ``0.0.0.0``
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ 
+.. image:: _images/ubuntu-couchdb-install-3.png
+    :alt: Ubuntu CouchDB Admin Password
+    :width: 480
+    :align: right
+    
+6. Set a password for the CouchDB **Admin** account
+
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+
+7. Now you may move on to the **CouchDB Configuration** section
 
 Ubuntu 16.04 (xenial)
 +++++++++++++++++++++
@@ -127,6 +233,8 @@ Ubuntu 16.04 (xenial)
  |
  |
  |
+
+7. Now you may move on to the **CouchDB Configuration** section
  
 Ubuntu 18.04 (bionic)
 +++++++++++++++++++++
@@ -195,6 +303,8 @@ Ubuntu 18.04 (bionic)
  |
  |
  |
+
+7. Now you may move on to the **CouchDB Configuration** section
  
 Ubuntu 20.04 (focal)
 ++++++++++++++++++++
@@ -263,6 +373,8 @@ Ubuntu 20.04 (focal)
  |
  |
  |
+
+7. Now you may move on to the **CouchDB Configuration** section
  
 CentOS
 ++++++
@@ -292,6 +404,8 @@ CentOS
     $ sudo systemctl status couchdb
 
 4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
+
+|
 
 5. Scroll down to the **[admins]** section and uncomment the following line and change the default password ::
 
