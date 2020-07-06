@@ -25,6 +25,7 @@ If you are running one of the following versions of Linux, the easiest way to in
 * :ref:`Ubuntu 20.04 (focal)`
 * :ref:`CentOS`
 * :ref:`Raspberry OS`
+* :ref:`Docker`
 
 Debian 9 (stretch)
 ++++++++++++++++++
@@ -43,7 +44,7 @@ Debian 9 (stretch)
     $ sudo apt update
     $ sudo apt install -y couchdb
     
-.. image:: _images/ubuntu-couchdb-install-1.png
+.. image:: _images/debian-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
     :width: 480
     :align: right
@@ -61,7 +62,7 @@ Debian 9 (stretch)
  |
  |
  
-.. image:: _images/ubuntu-couchdb-install-2.png
+.. image:: _images/debian-couchdb-install-2.png
     :alt: Ubuntu CouchDB Bind Address
     :width: 480
     :align: right
@@ -79,7 +80,7 @@ Debian 9 (stretch)
  |
  |
  
-.. image:: _images/ubuntu-couchdb-install-3.png
+.. image:: _images/debian-couchdb-install-3.png
     :alt: Ubuntu CouchDB Admin Password
     :width: 480
     :align: right
@@ -113,7 +114,7 @@ Debian 10 (buster)
     $ sudo apt update
     $ sudo apt install -y couchdb
 
-.. image:: _images/ubuntu-couchdb-install-1.png
+.. image:: _images/debian-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
     :width: 480
     :align: right
@@ -131,7 +132,7 @@ Debian 10 (buster)
  |
  |
  
-.. image:: _images/ubuntu-couchdb-install-2.png
+.. image:: _images/debian-couchdb-install-2.png
     :alt: Ubuntu CouchDB Bind Address
     :width: 480
     :align: right
@@ -149,7 +150,7 @@ Debian 10 (buster)
  |
  |
  
-.. image:: _images/ubuntu-couchdb-install-3.png
+.. image:: _images/debian-couchdb-install-3.png
     :alt: Ubuntu CouchDB Admin Password
     :width: 480
     :align: right
