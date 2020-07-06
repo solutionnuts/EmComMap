@@ -267,7 +267,62 @@ Ubuntu 20.04 (focal)
 CentOS
 ++++++
 
-**COMING SOON!**
+1. Using your text editor, place the following into ``/etc/yum.repos.d/bintray-apache-couchdb-rpm.repo`` to enable the CouchDB repository ::
+
+    [bintray--apache-couchdb-rpm]
+    name=bintray--apache-couchdb-rpm
+    baseurl=http://apache.bintray.com/couchdb-rpm/el$releasever/$basearch/
+    gpgcheck=0
+    repo_gpgcheck=0
+    enabled=1
+    
+2. Install the CouchDB packages ::
+
+    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+    
+3. Enable CouchDB to start on boot, then start CouchDB and verify it is running ::
+
+    $ sudo systemctl enable couchdb
+    $ sudo systemctl start couchdb
+    $ sudo systemctl status couchdb
+    
+.. image:: _images/couchdb-service-status.png
+    :alt: Ubuntu CouchDB Service Status
+    :width: 480
+    :align: right
+    
+    You should see the following:
+
+|
+|
+|
+|
+|
+|
+
+4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
+
+5. Scroll down to the **[admins]** section and uncomment the following line and change the default password ::
+
+    [admins]
+    admin = mypassword
+    
+6. Now scroll up to the **[chttpd]** section and uncomment the **port** and **bind_address** values. Set the **bind_address** value to ``0.0.0.0``. This allows access from other computers on your LAN. For security issues, this can be changed later to the IP address of your web server hosting the EmComMap web application. ::
+
+    [chttpd]
+    port = 5984
+    bind_address = 0.0.0.0
+    
+7. Save the changes and exit then restart CouchDB for changes to take effect ::
+
+    $ sudo systemctl restart couchdb
+    
+8. If you are running **firewalld** on the server (usually installed by default), you will need to open port 5984 to allow CouchDB traffic ::
+
+    $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
+    $ sudo firewall-cmd --reload
+    
+9. Now you may move on to the **CouchDB Configuration** section
 
 Raspberry OS
 ++++++++++++
