@@ -60,8 +60,6 @@ Debian 9 (stretch)
  |
  |
  |
- |
- |
  
 .. image:: _images/debian-couchdb-install-2.png
     :alt: Debian CouchDB Bind Address
@@ -70,8 +68,6 @@ Debian 9 (stretch)
     
 5. Set **Bind** address to ``0.0.0.0``
 
- |
- |
  |
  |
  |
@@ -131,8 +127,6 @@ Debian 10 (buster)
  |
  |
  |
- |
- |
  
 .. image:: _images/debian-couchdb-install-2.png
     :alt: Debian CouchDB Bind Address
@@ -149,9 +143,7 @@ Debian 10 (buster)
  |
  |
  |
- |
- |
- 
+
 .. image:: _images/debian-couchdb-install-3.png
     :alt: Debian CouchDB Admin Password
     :width: 480
@@ -435,7 +427,65 @@ CentOS
 Raspberry OS
 ++++++++++++
 
-**COMING SOON!**
+1. Install the dependencies ::
+
+    $ sudo apt-get --no-install-recommends -y install build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
+    
+    Be sure to update the version numbers to match your system’s available packages.
+    
+2. Download the CouchDB source package ::
+
+    $ wget http://apache.mirrors.hoobly.com/couchdb/source/3.1.0/apache-couchdb-3.1.0.tar.gz
+    
+3. Decompress the file ::
+
+    $ tar -zxvf apache-couchdb-3.1.0.tar.gz
+    
+4. Change to the **couchdb** directory ::
+
+    $ cd couchdb
+    
+5. Verify that all the dependencies are installed to build CouchDB ::
+
+    $ ./configure
+    
+    If everything was successful, you will receive the message ::
+    
+    You have configured Apache CouchDB, time to relax.
+    
+6. Build CouchDB ::
+
+    $ make release
+    
+    If everything was successful, you will receive the following message ::
+    
+    ... done
+    You can now copy the rel/couchdb directory anywhere on your system.
+    Start CouchDB with ./bin/couchdb from within that directory.
+    
+7. Create a special user for CouchDB ::
+
+    $ sudo adduser --system --shell /bin/bash --group --gecos "CouchDB Administrator" couchdb
+    
+8. Copy the built CouchDB release to the **couchdb** user's home directory ::
+
+    $ sudo cp -R /path/to/couchdb/rel/couchdb /home/couchdb
+    
+9. Change ownership of the CouchDB directories ::
+
+    $ sudo chown -R couchdb:couchdb /home/couchdb
+    
+10. Change the permission of the CouchDB directories ::
+
+    $ sudo find /home/couchdb -type d -exec chmod 0770 {} \;
+    
+11. Change permissions of the CouchDB ini files ::
+
+    $ sudo chmod 0644 /home/couchdb/etc/*
+
+12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
+
+13. Now you may move on to the **CouchDB Configuration** section
 
 Docker
 ++++++
