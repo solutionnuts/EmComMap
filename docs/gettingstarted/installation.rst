@@ -491,12 +491,18 @@ Raspberry OS
 Docker
 ++++++
 
-**COMING SOON!**
+**If you have not already, install Docker**
+
+1. To start a basic CouchDB container ::
+
+    $ docker run -d --name my-couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
+    
+2. Now you may move on to the **CouchDB Configuration** section
 
 Install Map Tile Server
 -----------------------
 
-**Docker is required to install the map tile server**
+**If you have not already, install Docker**
 
 Maps are powered by OpenStreeMap data. They are ready to use and not need to render the tiles after download.
 
