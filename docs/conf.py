@@ -76,7 +76,7 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_logo = 'EmComMap_Logo.png'
+html_logo = './_images/EmComMap_Logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
