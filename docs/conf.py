@@ -131,7 +131,7 @@ latex_elements = {
 # latex_documents = [
 #    (master_doc, 'AREDN_Documentation.tex', u'AREDN Documentation',
 #     u'AREDN', 'manual'),
-]
+
 
 
 # -- Options for manual page output ------------------------------------------
@@ -141,7 +141,7 @@ latex_elements = {
 # man_pages = [
 #    (master_doc, 'aredn_documentation', u'AREDN Documentation',
 #     [author], 1)
-]
+
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -153,7 +153,7 @@ latex_elements = {
 #    (master_doc, 'AREDN_Documentation', u'AREDN Documentation',
 #     author, 'AREDN_Documentation', 'A guide for AREDN software.',
 #     'Miscellaneous'),
-]
+
 
 
 # -- Options for Epub output -------------------------------------------------
