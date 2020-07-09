@@ -65,17 +65,17 @@ emcommap@gmail.com
    :hidden:
 
    glossary
-   
+
 .. toctree::
    :numbered:
+   :maxdepth: 1
+   :caption: Appendix
+   :hidden:
+
+.. toctree::
    :maxdepth: 1
    :caption: Special Thanks
    :hidden:
    
    thanks
    
-.. toctree::
-   :numbered:
-   :maxdepth: 1
-   :caption: Appendix
-   :hidden:
