@@ -6,13 +6,14 @@ EmComMap Installation
 * Can be installed on any webserver whether internet facing or private (ex. MESH networking)
 * Relies on three server platforms, each of which can be deployed redundantly to avoid single points of failure
 
-    - CouchDB
-    - Map tile server
-    - Web server (e.g. Apache2 or nginx)
+    - :ref:`CouchDB`
+    - :ref:`Map Tile Server`
+    - :ref:`Web Server` (e.g. Apache2 or nginx)
 
+.. _CouchDB:
 
-Install CouchDB
----------------
+CouchDB
+-------
 
 CouchDB can be installed on Linux, Mac and Windows. CouchDB can also be installed in **Standalone** or **Clustered** mode. We will just cover a Linux standalone installation in this document. For more information on Mac and Windwos or creating a clustered installation, please visit the official `CouchDB website <https://couchdb.apache.org>`_.
 
@@ -94,7 +95,7 @@ Debian 9 (stretch)
  |
  |
 
-7. Now you may move on to the :ref:`\ **CouchDB Configuration**\` section
+7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Debian 10 (buster):
 
@@ -163,7 +164,7 @@ Debian 10 (buster)
  |
  |
 
-7. Now you may move on to the **:ref:`CouchDB Configuration`** section
+7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Ubuntu 16.04 (xenial):
 
@@ -235,7 +236,7 @@ Ubuntu 16.04 (xenial)
  |
  |
 
-7. Now you may move on to the **:ref:`CouchDB Configuration`** section
+7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Ubuntu 18.04 (bionic):
 
@@ -307,7 +308,7 @@ Ubuntu 18.04 (bionic)
  |
  |
 
-7. Now you may move on to the **:ref:`CouchDB Configuration`** section
+7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Ubuntu 20.04 (focal):
 
@@ -379,7 +380,7 @@ Ubuntu 20.04 (focal)
  |
  |
 
-7. Now you may move on to the **:ref:`CouchDB Configuration`** section
+7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _CentOS:
 
@@ -434,7 +435,7 @@ CentOS
     $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
     $ sudo firewall-cmd --reload
     
-9. Now you may move on to the **:ref:`CouchDB Configuration`** section
+9. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Raspberry OS:
 
@@ -500,7 +501,7 @@ Raspberry OS
 
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
-13. Now you may move on to the **:ref:`CouchDB Configuration`** section
+13. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Docker:
 
@@ -513,10 +514,12 @@ Docker
 
     $ docker run -d --name my-couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
     
-2. Now you may move on to the **:ref:`CouchDB Configuration`** section
+2. Now you may move on to the :ref:`CouchDB Configuration` section
 
-Install Map Tile Server
------------------------
+.. _Map Tile Server:
+
+Map Tile Server
+---------------
 
 **If you have not already, install Docker**
 
@@ -602,8 +605,10 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
 8. Once the download has completed, click **OPEN SERVER**.
 
-Install Web Server
-------------------
+.. _Web Server:
+
+Web Server
+----------
 
 You can run whichever webserver you like but we will be using Apache2 for this example.
 
