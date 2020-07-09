@@ -174,3 +174,7 @@ epub_title = project
 #
 # epub_uid = ''
 
+def setup(app):
+    app.add_stylesheet('custom.css')
+    app.add_javascript("custom.js")
+    app.add_javascript("https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js")
