@@ -94,7 +94,7 @@ Debian 9 (stretch)
  |
  |
 
-7. Now you may move on to the **\ :ref:`CouchDB Configuration`\** section
+7. Now you may move on to the :ref:`\ **CouchDB Configuration**\` section
 
 .. _Debian 10 (buster):
 
