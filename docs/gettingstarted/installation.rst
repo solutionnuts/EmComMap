@@ -165,7 +165,7 @@ Debian 10 (buster)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Ubuntu 16.04 (xenial):
 
 Ubuntu 16.04 (xenial)
 +++++++++++++++++++++
@@ -237,7 +237,7 @@ Ubuntu 16.04 (xenial)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Ubuntu 18.04 (bionic):
 
 Ubuntu 18.04 (bionic)
 +++++++++++++++++++++
@@ -309,7 +309,7 @@ Ubuntu 18.04 (bionic)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Ubuntu 20.04 (focal):
 
 Ubuntu 20.04 (focal)
 ++++++++++++++++++++
@@ -381,7 +381,7 @@ Ubuntu 20.04 (focal)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _CentOS:
 
 CentOS
 ++++++
@@ -436,7 +436,7 @@ CentOS
     
 9. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Raspberry OS:
 
 Raspberry OS
 ++++++++++++
@@ -502,7 +502,7 @@ Raspberry OS
 
 13. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Docker:
 
 Docker
 ++++++
