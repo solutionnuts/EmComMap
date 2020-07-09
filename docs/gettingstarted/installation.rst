@@ -27,6 +27,8 @@ If you are running one of the following versions of Linux, the easiest way to in
 * :ref:`Raspberry OS`
 * :ref:`Docker`
 
+.. _my-reference-label:
+
 Debian 9 (stretch)
 ++++++++++++++++++
 
@@ -94,6 +96,8 @@ Debian 9 (stretch)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
+.. _my-reference-label:
+
 Debian 10 (buster)
 ++++++++++++++++++
 
@@ -160,6 +164,8 @@ Debian 10 (buster)
  |
 
 7. Now you may move on to the **CouchDB Configuration** section
+
+.. _my-reference-label:
 
 Ubuntu 16.04 (xenial)
 +++++++++++++++++++++
@@ -230,7 +236,9 @@ Ubuntu 16.04 (xenial)
  |
 
 7. Now you may move on to the **CouchDB Configuration** section
- 
+
+.. _my-reference-label:
+
 Ubuntu 18.04 (bionic)
 +++++++++++++++++++++
 
@@ -300,7 +308,9 @@ Ubuntu 18.04 (bionic)
  |
 
 7. Now you may move on to the **CouchDB Configuration** section
- 
+
+.. _my-reference-label:
+
 Ubuntu 20.04 (focal)
 ++++++++++++++++++++
 
@@ -370,7 +380,9 @@ Ubuntu 20.04 (focal)
  |
 
 7. Now you may move on to the **CouchDB Configuration** section
- 
+
+.. _my-reference-label:
+
 CentOS
 ++++++
 
@@ -423,6 +435,8 @@ CentOS
     $ sudo firewall-cmd --reload
     
 9. Now you may move on to the **CouchDB Configuration** section
+
+.. _my-reference-label:
 
 Raspberry OS
 ++++++++++++
@@ -487,6 +501,8 @@ Raspberry OS
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
 13. Now you may move on to the **CouchDB Configuration** section
+
+.. _my-reference-label:
 
 Docker
 ++++++
