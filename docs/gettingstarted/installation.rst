@@ -94,7 +94,7 @@ Debian 9 (stretch)
  |
  |
 
-7. Now you may move on to the :ref:`**CouchDB Configuration**` section
+7. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Debian 10 (buster):
 
@@ -163,7 +163,7 @@ Debian 10 (buster)
  |
  |
 
-7. Now you may move on to the :ref:`**CouchDB Configuration**` section
+7. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Ubuntu 16.04 (xenial):
 
@@ -235,7 +235,7 @@ Ubuntu 16.04 (xenial)
  |
  |
 
-7. Now you may move on to the :ref:`**CouchDB Configuration**` section
+7. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Ubuntu 18.04 (bionic):
 
@@ -307,7 +307,7 @@ Ubuntu 18.04 (bionic)
  |
  |
 
-7. Now you may move on to the :ref:`**CouchDB Configuration**` section
+7. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Ubuntu 20.04 (focal):
 
@@ -379,7 +379,7 @@ Ubuntu 20.04 (focal)
  |
  |
 
-7. Now you may move on to the :ref:`**CouchDB Configuration**` section
+7. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _CentOS:
 
@@ -434,7 +434,7 @@ CentOS
     $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
     $ sudo firewall-cmd --reload
     
-9. Now you may move on to the :ref:`**CouchDB Configuration**` section
+9. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Raspberry OS:
 
@@ -500,7 +500,7 @@ Raspberry OS
 
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
-13. Now you may move on to the :ref:`**CouchDB Configuration**` section
+13. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 .. _Docker:
 
@@ -513,7 +513,7 @@ Docker
 
     $ docker run -d --name my-couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
     
-2. Now you may move on to the :ref:`**CouchDB Configuration**` section
+2. Now you may move on to the **:ref:`CouchDB Configuration`** section
 
 Install Map Tile Server
 -----------------------
