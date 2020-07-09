@@ -21,7 +21,7 @@
 
 project = u'EmComMap User Guide'
 copyright = u'2020, EmComMap'
-author = u'AE7WY'
+author = u'AE7WY & K6OAT'
 
 # The short X.Y version
 version = u'0.4'
@@ -84,7 +84,7 @@ html_logo = './_images/EmComMap_Logo.png'
 #
 html_theme_options = {
     'logo_only': True,
-    'display_version': False,
+    'display_version': True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
