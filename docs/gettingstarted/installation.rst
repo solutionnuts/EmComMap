@@ -398,6 +398,8 @@ CentOS
     $ sudo systemctl start couchdb
     $ sudo systemctl status couchdb
 
+|
+
 4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
 
 5. Scroll down to the **[admins]** section and uncomment the following line and change the default password ::
