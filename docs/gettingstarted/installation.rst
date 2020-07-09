@@ -27,7 +27,7 @@ If you are running one of the following versions of Linux, the easiest way to in
 * :ref:`Raspberry OS`
 * :ref:`Docker`
 
-.. _my-reference-label:
+.. _Debian 9 (stretch):
 
 Debian 9 (stretch)
 ++++++++++++++++++
@@ -96,7 +96,7 @@ Debian 9 (stretch)
 
 7. Now you may move on to the **CouchDB Configuration** section
 
-.. _my-reference-label:
+.. _Debian 10 (buster):
 
 Debian 10 (buster)
 ++++++++++++++++++
