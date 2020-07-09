@@ -26,6 +26,7 @@ emcommap@gmail.com
       * You should be able to use *guest* for the username and password. If you would like a personal account, `email Dan <emcommap@gmail.com>`_ for access to the demo server
 
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Getting Started Guide
    :hidden:
@@ -34,6 +35,7 @@ emcommap@gmail.com
    gettingstarted/installation
 
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Operation
    :hidden:
@@ -41,6 +43,7 @@ emcommap@gmail.com
    operation/operation
    
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: How-To's
    :hidden:
@@ -48,6 +51,7 @@ emcommap@gmail.com
    howto/incident-walkthru
    
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Troubleshooting
    :hidden:
@@ -55,6 +59,7 @@ emcommap@gmail.com
    troubleshooting
    
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Glossary
    :hidden:
@@ -62,6 +67,7 @@ emcommap@gmail.com
    glossary
    
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Special Thanks
    :hidden:
@@ -69,6 +75,7 @@ emcommap@gmail.com
    thanks
    
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :caption: Appendix
    :hidden:
