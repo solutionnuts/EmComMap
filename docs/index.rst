@@ -56,7 +56,15 @@ emcommap@gmail.com
    :caption: Troubleshooting
    :hidden:
 
-   troubleshooting
+   troubleshooting/troubleshooting
+   
+.. toctree::
+   :numbered:
+   :maxdepth: 1
+   :caption: FAQ's
+   :hidden:
+
+   faqs/faqs
    
 .. toctree::
    :numbered:
