@@ -1,6 +1,0 @@
----------------
-Troubleshooting
----------------
-
-**Coming Soon!**
-
