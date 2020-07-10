@@ -38,6 +38,7 @@ Debian 9 (stretch)
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
 ::
+
     $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -107,7 +108,8 @@ Debian 10 (buster)
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
-::    
+::
+
     $ echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -178,6 +180,7 @@ Ubuntu 16.04 (xenial)
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
 ::
+
     $ echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -251,6 +254,7 @@ Ubuntu 18.04 (bionic)
     $ sudo apt-get install -y gnupg ca-certificates
     
 ::
+
     $ echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -324,6 +328,7 @@ Ubuntu 20.04 (focal)
     $ sudo apt-get install -y gnupg ca-certificates
     
 ::
+
     $ echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -415,9 +420,11 @@ CentOS
     $ sudo systemctl enable couchdb
     
 ::
+
     $ sudo systemctl start couchdb
     
 ::
+
     $ sudo systemctl status couchdb
 
 |
@@ -545,6 +552,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     $ mkdir openmaptiles
     
 ::
+
     $ cd openmaptiles
     
 3. Launch a Docker container with the following command. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open. ::
@@ -637,6 +645,7 @@ Ubuntu/Debian
     $ cd /var/www/html
     
 ::
+
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 3. Restart the Apache2 webserver ::
@@ -663,6 +672,7 @@ CentOS
     $ cd /var/www/html
     
 ::
+
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
@@ -702,6 +712,7 @@ Raspberry OS
     $ cd /var/www/html
     
 ::
+
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
