@@ -36,6 +36,8 @@ Debian 9 (stretch)
 1. Start by enabling the Apache CouchDB package repository ::
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    
+::
     $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -44,8 +46,7 @@ Debian 9 (stretch)
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update
-    $ sudo apt install -y couchdb
+    $ sudo apt update && sudo apt install -y couchdb
 
 
 .. image:: _images/debian-couchdb-install-1.png
@@ -105,6 +106,8 @@ Debian 10 (buster)
 1. Start by enabling the Apache CouchDB package repository ::
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    
+::    
     $ echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -113,8 +116,7 @@ Debian 10 (buster)
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update
-    $ sudo apt install -y couchdb
+    $ sudo apt update && sudo apt install -y couchdb
 
 
 .. image:: _images/debian-couchdb-install-1.png
@@ -174,6 +176,8 @@ Ubuntu 16.04 (xenial)
 1. Start by enabling the Apache CouchDB package repository ::
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    
+::
     $ echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -182,8 +186,7 @@ Ubuntu 16.04 (xenial)
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update
-    $ sudo apt install -y couchdb
+    $ sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -246,6 +249,8 @@ Ubuntu 18.04 (bionic)
 1. Start by enabling the Apache CouchDB package repository ::
 
     $ sudo apt-get install -y gnupg ca-certificates
+    
+::
     $ echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -254,8 +259,7 @@ Ubuntu 18.04 (bionic)
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update
-    $ sudo apt install -y couchdb
+    $ sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -318,6 +322,8 @@ Ubuntu 20.04 (focal)
 1. Start by enabling the Apache CouchDB package repository ::
 
     $ sudo apt-get install -y gnupg ca-certificates
+    
+::
     $ echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
@@ -326,8 +332,7 @@ Ubuntu 20.04 (focal)
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update
-    $ sudo apt install -y couchdb
+    $ sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -408,7 +413,11 @@ CentOS
 3. Enable CouchDB to start on boot, then start CouchDB and verify it is running ::
 
     $ sudo systemctl enable couchdb
+    
+::
     $ sudo systemctl start couchdb
+    
+::
     $ sudo systemctl status couchdb
 
 |
@@ -433,6 +442,8 @@ CentOS
 8. If you are running **firewalld** on the server (usually installed by default), you will need to open port 5984 to allow CouchDB traffic ::
 
     $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
+    
+::
     $ sudo firewall-cmd --reload
     
 9. Now you may move on to the :ref:`CouchDB Configuration` section
@@ -531,7 +542,9 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
 2. Make a directory to store your map tile file and then change directory to it ::
 
-    $ mkdir openmaptiles       (or whatever you want to name the directory)
+    $ mkdir openmaptiles
+    
+::
     $ cd openmaptiles
     
 3. Launch a Docker container with the following command. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open. ::
@@ -622,6 +635,8 @@ Ubuntu/Debian
 2. Change directory to ``/var/www/html`` and download EmComMap ::
 
     $ cd /var/www/html
+    
+::
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 3. Restart the Apache2 webserver ::
@@ -633,8 +648,7 @@ CentOS
 
 1. Run the following commands to update the **httpd** package index and install **httpd** (Apache2) ::
 
-    $ sudo yum update httpd
-    $ sudo yum install httpd
+    $ sudo yum update httpd && sudo yum install httpd
 
 2. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
     
@@ -647,6 +661,8 @@ CentOS
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
     $ cd /var/www/html
+    
+::
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
@@ -684,6 +700,8 @@ Raspberry OS
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
     $ cd /var/www/html
+    
+::
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
