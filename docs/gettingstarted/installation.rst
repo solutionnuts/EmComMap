@@ -37,7 +37,7 @@ Debian 9 (stretch)
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
-::
+    ::
 
     $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
@@ -108,7 +108,7 @@ Debian 10 (buster)
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
-::
+    ::
 
     $ echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
@@ -179,7 +179,7 @@ Ubuntu 16.04 (xenial)
 
     $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
-::
+    ::
 
     $ echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
@@ -253,7 +253,7 @@ Ubuntu 18.04 (bionic)
 
     $ sudo apt-get install -y gnupg ca-certificates
     
-::
+    ::
 
     $ echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
@@ -327,7 +327,7 @@ Ubuntu 20.04 (focal)
 
     $ sudo apt-get install -y gnupg ca-certificates
     
-::
+    ::
 
     $ echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
@@ -419,11 +419,11 @@ CentOS
 
     $ sudo systemctl enable couchdb
     
-::
+    ::
 
     $ sudo systemctl start couchdb
     
-::
+    ::
 
     $ sudo systemctl status couchdb
 
@@ -450,7 +450,8 @@ CentOS
 
     $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
     
-::
+    ::
+    
     $ sudo firewall-cmd --reload
     
 9. Now you may move on to the :ref:`CouchDB Configuration` section
@@ -551,7 +552,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
     $ mkdir openmaptiles
     
-::
+    ::
 
     $ cd openmaptiles
     
@@ -644,7 +645,7 @@ Ubuntu/Debian
 
     $ cd /var/www/html
     
-::
+    ::
 
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
@@ -671,7 +672,7 @@ CentOS
 
     $ cd /var/www/html
     
-::
+    ::
 
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
@@ -711,7 +712,7 @@ Raspberry OS
 
     $ cd /var/www/html
     
-::
+    ::
 
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
