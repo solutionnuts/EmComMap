@@ -35,19 +35,19 @@ Debian 9 (stretch)
 
 1. Start by enabling the Apache CouchDB package repository ::
 
-    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
  ::
 
-    $ echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    echo "deb https://apache.bintray.com/couchdb-deb stretch main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
 
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update && sudo apt install -y couchdb
+    sudo apt update && sudo apt install -y couchdb
 
 
 .. image:: _images/debian-couchdb-install-1.png
@@ -106,19 +106,19 @@ Debian 10 (buster)
 
 1. Start by enabling the Apache CouchDB package repository ::
 
-    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
  ::
 
-    $ echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    echo "deb https://apache.bintray.com/couchdb-deb buster main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
 
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update && sudo apt install -y couchdb
+    sudo apt update && sudo apt install -y couchdb
 
 
 .. image:: _images/debian-couchdb-install-1.png
@@ -177,19 +177,19 @@ Ubuntu 16.04 (xenial)
 
 1. Start by enabling the Apache CouchDB package repository ::
 
-    $ sudo apt-get install -y apt-transport-https gnupg ca-certificates
+    sudo apt-get install -y apt-transport-https gnupg ca-certificates
     
  ::
 
-    $ echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    echo "deb https://apache.bintray.com/couchdb-deb xenial main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
 
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update && sudo apt install -y couchdb
+    sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -255,15 +255,15 @@ Ubuntu 18.04 (bionic)
     
  ::
 
-    $ echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
 
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update && sudo apt install -y couchdb
+    sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -325,19 +325,19 @@ Ubuntu 20.04 (focal)
 
 1. Start by enabling the Apache CouchDB package repository ::
 
-    $ sudo apt-get install -y gnupg ca-certificates
+    sudo apt-get install -y gnupg ca-certificates
     
  ::
 
-    $ echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
+    echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee /etc/apt/sources.list.d/couchdb.list
     
 2. Install the CouchDB GPG key ::
 
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8756C4F765C9AC3CB6B85D62379CE192D401AB61
     
 3. Update the repository and install the CouchDB package ::
 
-    $ sudo apt update && sudo apt install -y couchdb
+    sudo apt update && sudo apt install -y couchdb
     
 .. image:: _images/ubuntu-couchdb-install-1.png
     :alt: Ubuntu CouchDB Standalone
@@ -408,7 +408,7 @@ CentOS
     
 2. Install the CouchDB packages ::
 
-    $ sudo yum -y install epel-release && sudo yum -y install couchdb
+    sudo yum -y install epel-release && sudo yum -y install couchdb
 
 .. image:: _images/couchdb-service-status.png
     :alt: CouchDB Service Status
@@ -417,15 +417,15 @@ CentOS
 
 3. Enable CouchDB to start on boot, then start CouchDB and verify it is running ::
 
-    $ sudo systemctl enable couchdb
+    sudo systemctl enable couchdb
     
  ::
 
-    $ sudo systemctl start couchdb
+    sudo systemctl start couchdb
     
  ::
 
-    $ sudo systemctl status couchdb
+    sudo systemctl status couchdb
 
 |
 
@@ -444,15 +444,15 @@ CentOS
     
 7. Save the changes and exit then restart CouchDB for changes to take effect ::
 
-    $ sudo systemctl restart couchdb
+    sudo systemctl restart couchdb
     
 8. If you are running **firewalld** on the server (usually installed by default), you will need to open port 5984 to allow CouchDB traffic ::
 
-    $ sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
+    sudo firewall-cmd --zone=public --permanent --add-port=5984/tcp
     
  ::
     
-    $ sudo firewall-cmd --reload
+    sudo firewall-cmd --reload
     
 9. Now you may move on to the :ref:`CouchDB Configuration` section
 
@@ -463,26 +463,26 @@ Raspberry OS
 
 1. Install the dependencies ::
 
-    $ sudo apt-get --no-install-recommends -y install build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
+    sudo apt-get --no-install-recommends -y install build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
     
    Be sure to update the version numbers to match your system’s available packages.
    
     
 2. Download the CouchDB source package ::
 
-    $ wget http://apache.mirrors.hoobly.com/couchdb/source/3.1.0/apache-couchdb-3.1.0.tar.gz
+    wget http://apache.mirrors.hoobly.com/couchdb/source/3.1.0/apache-couchdb-3.1.0.tar.gz
     
 3. Decompress the file ::
 
-    $ tar -zxvf apache-couchdb-3.1.0.tar.gz
+    tar -zxvf apache-couchdb-3.1.0.tar.gz
     
 4. Change to the **couchdb** directory ::
 
-    $ cd couchdb
+    cd couchdb
     
 5. Verify that all the dependencies are installed to build CouchDB ::
 
-    $ ./configure
+    ./configure
     
    If everything was successful, you will receive the message ::
     
@@ -490,7 +490,7 @@ Raspberry OS
     
 6. Build CouchDB ::
 
-    $ make release
+    make release
     
    If everything was successful, you will receive the following message ::
     
@@ -500,23 +500,23 @@ Raspberry OS
     
 7. Create a special user for CouchDB ::
 
-    $ sudo adduser --system --shell /bin/bash --group --gecos "CouchDB Administrator" couchdb
+    sudo adduser --system --shell /bin/bash --group --gecos "CouchDB Administrator" couchdb
     
 8. Copy the built CouchDB release to the **couchdb** user's home directory ::
 
-    $ sudo cp -R /path/to/couchdb/rel/couchdb /home/couchdb
+    sudo cp -R /path/to/couchdb/rel/couchdb /home/couchdb
     
 9. Change ownership of the CouchDB directories ::
 
-    $ sudo chown -R couchdb:couchdb /home/couchdb
+    sudo chown -R couchdb:couchdb /home/couchdb
     
 10. Change the permission of the CouchDB directories ::
 
-    $ sudo find /home/couchdb -type d -exec chmod 0770 {} \;
+    sudo find /home/couchdb -type d -exec chmod 0770 {} \;
     
 11. Change permissions of the CouchDB ini files ::
 
-    $ sudo chmod 0644 /home/couchdb/etc/*
+    sudo chmod 0644 /home/couchdb/etc/*
 
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
@@ -529,13 +529,19 @@ Docker
 
 **If you have not already, install Docker**
 
-1. To start a basic CouchDB container ::
+There are two ways to setup a container. First one lets Docker manage the file storage location inside the container. The second allows you to store the data files outside the container in a "persistent" manner making it easier for tools and applications to access the files. This is also more secure if the container fails or is shutdown accidently without backing up the data files.
 
-    $ docker run -d --name my-couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
+1a. To start a basic CouchDB container ::
+
+    docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
     
  The only issue with the basic container is that it can be difficult for tools (ex. backup application) to locate and access the file storage inside the container.
  
- The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+ The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
+ 
+1b. To launch a CouchDB container with persistent file storage ::
+
+    docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
     
 2. Now you may move on to the :ref:`CouchDB Configuration` section
 
@@ -550,7 +556,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
 
 1. Install Docker with the following command ::
 
-    $ curl -sSL https://get.docker.com/ | sh
+    curl -sSL https://get.docker.com/ | sh
     
 2. Make a directory to store your map tile file and then change directory to it ::
 
@@ -558,11 +564,11 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
  ::
 
-    $ cd openmaptiles
+    cd openmaptiles
     
 3. Launch a Docker container with the following command. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open. ::
 
-    $ docker run -dit --name <disiredservername> -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
+    docker run -dit --name <disiredservername> -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
 
 .. warning:: The Docker OpenMapTiles container **MUST** be run from the directory you created above.
 
@@ -643,11 +649,11 @@ Ubuntu/Debian
 
 1. Run the following command to install **Apache2** ::
 
-    $ sudo apt install -y httpd
+    sudo apt install -y httpd
 
 2. Change directory to ``/var/www/html`` and download EmComMap ::
 
-    $ cd /var/www/html
+    cd /var/www/html
     
  ::
 
@@ -655,45 +661,45 @@ Ubuntu/Debian
 
 3. Restart the Apache2 webserver ::
 
-    $ sudo apache2ctl restart
+    sudo apache2ctl restart
 
 CentOS
 ++++++
 
 1. Run the following commands to update the **httpd** package index and install **httpd** (Apache2) ::
 
-    $ sudo yum update httpd && sudo yum install httpd
+    sudo yum update httpd && sudo yum install httpd
 
 2. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
     
-    $ sudo systemctl start httpd
+    sudo systemctl start httpd
     
 3. Confirm Apache is running ::
     
-    $ sudo systemctl status httpd
+    sudo systemctl status httpd
     
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
-    $ cd /var/www/html
+    cd /var/www/html
     
  ::
 
-    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+    sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
 
-    $ sudo apache2ctl restart
+    sudo apache2ctl restart
 
 Raspberry OS
 ++++++++++++
 
 1. Update the available packages ::
 
-    $ sudo apt update
+    sudo apt update
     
 2. Install the **Apache2** package ::
 
-    $ sudo apt install apache2 -y
+    sudo apt install apache2 -y
 
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
@@ -714,15 +720,15 @@ Raspberry OS
 
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
-    $ cd /var/www/html
+    cd /var/www/html
     
  ::
 
-    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+    sudo git clone https://github.com/DanRuderman/EmComMap.git
 
 5. Restart the Apache2 webserver ::
 
-    $ sudo apache2ctl restart
+    sudo apache2ctl restart
 
 Docker
 ++++++
@@ -884,7 +890,7 @@ EmComMap Configuration
 
 1. Open the file ``/var/www/html/EmComMap/html/config.js`` in a text editor ::
 
-    $ sudo vim /var/www/html/EmComMap/html/config.js
+    sudo vim /var/www/html/EmComMap/html/config.js
     
 2. Towards the top of the file you will see these lines ::
 
