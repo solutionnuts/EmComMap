@@ -533,6 +533,10 @@ Docker
 
     $ docker run -d --name my-couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
     
+ The only issue with the basic container is that it can be difficult for tools (ex. backup application) to locate and access the file storage inside the container.
+ 
+ The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+    
 2. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Map Tile Server:
@@ -625,7 +629,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
 7. Click **Click here to get the download key**. You will be taken to the OpenMapTiles site. It will walk you through signing up for a free account if you don't already have one and then provide you with a **DOWNLOAD KEY**. Copy and paste it into the form and click **START DOWNLOAD**.
 
-8. Once the download has completed, click **OPEN SERVER**.
+8. Once the download has completed, click **OPEN MAP SERVER**.
 
 .. _Web Server:
 
