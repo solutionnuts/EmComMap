@@ -527,8 +527,6 @@ Raspberry OS
 Docker
 ++++++
 
-**If you have not already, install Docker**
-
 There are two ways to setup a container. First one lets Docker manage the file storage location inside the container. The second allows you to store the data files outside the container in a "persistent" manner making it easier for tools and applications to access the files. This is also more secure if the container fails or is shutdown accidently without backing up the data files.
 
 The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
@@ -547,8 +545,6 @@ The preferred method would be to create a data directory on the host system (out
 
 Map Tile Server
 ---------------
-
-**If you have not already, install Docker**
 
 Maps are powered by OpenStreeMap data. They are ready to use and not need to render the tiles after download.
 
@@ -705,7 +701,7 @@ Raspberry OS
     
 3. Test the install by opening a web browser and going to
 
-``http://<hostname or IP>``
+``http://<hostname or IP>:8080``
 
     You should see this page.
 |
@@ -731,7 +727,46 @@ Raspberry OS
 Docker
 ++++++
 
-**COMING SOON!**
+Just like with the CouchDB Docker installation, there are two ways to setup a container. First one lets Docker manage the file storage location inside the container. The second allows you to store the data files outside the container in a "persistent" manner making it easier for tools and applications to access the files. This is also more secure if the container fails or is shutdown accidently without backing up the data files.
+
+The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
+
+1a. To launch a basic Apache web server container ::
+
+    docker run -dit --name <desired name> -p 8080:80 httpd:2.4
+    
+1b. To launch a persistent Apache web server container ::
+
+    docker run -dit --name <desired name> -p 8080:80 -v /path/to/data/folder:/usr/local/apache2/htdocs/ httpd:2.4
+
+.. image:: _images/apache-works.png
+    :alt: Apache Test Page
+    :align: right
+    
+3. Test the install by opening a web browser and going to
+
+``http://<hostname or IP>:8080``
+
+    You should see this page.
+|
+|
+|
+|
+|
+|
+|
+
+4. Change directory to ``/var/www/html`` and download EmComMap ::
+
+    cd /var/www/html
+    
+ ::
+
+    sudo git clone https://github.com/DanRuderman/EmComMap.git
+
+5. Restart the Apache2 webserver ::
+
+    sudo apache2ctl restart
 
 .. _CouchDB Configuration:
 
