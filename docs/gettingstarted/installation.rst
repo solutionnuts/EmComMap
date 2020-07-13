@@ -539,7 +539,7 @@ The preferred method would be to create a data directory on the host system (out
  
 1b. To launch a CouchDB container with persistent file storage ::
 
-        docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
+    docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
     
 2. Now you may move on to the :ref:`CouchDB Configuration` section
 
