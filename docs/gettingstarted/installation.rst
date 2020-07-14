@@ -89,6 +89,13 @@ Debian 9 (stretch)
     
 6. Set a password for the CouchDB **Admin** account
 
+ |
+ |
+ |
+ |
+ |
+ |
+ 
 .. _Debian 10 (buster):
 
 Debian 10 (buster)
@@ -150,6 +157,13 @@ Debian 10 (buster)
     
 6. Set a password for the CouchDB **Admin** account
 
+ |
+ |
+ |
+ |
+ |
+ |
+ 
 .. _Ubuntu 16.04 (xenial):
 
 Ubuntu 16.04 (xenial)
@@ -214,6 +228,13 @@ Ubuntu 16.04 (xenial)
     
 6. Set a password for the CouchDB **Admin** account
 
+ |
+ |
+ |
+ |
+ |
+ |
+ 
 .. _Ubuntu 18.04 (bionic):
 
 Ubuntu 18.04 (bionic)
@@ -278,6 +299,13 @@ Ubuntu 18.04 (bionic)
     
 6. Set a password for the CouchDB **Admin** account
 
+ |
+ |
+ |
+ |
+ |
+ |
+ 
 .. _Ubuntu 20.04 (focal):
 
 Ubuntu 20.04 (focal)
@@ -342,6 +370,13 @@ Ubuntu 20.04 (focal)
     
 6. Set a password for the CouchDB **Admin** account
 
+ |
+ |
+ |
+ |
+ |
+ |
+ 
 .. _CentOS:
 
 CentOS
