@@ -685,7 +685,8 @@ CentOS
 
 .. image:: _images/apache-works-2.png
     :alt: Apache Test Page
-    :align: center
+    :width: 480
+    :align: right
     
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
@@ -716,7 +717,8 @@ Raspberry OS
 
 .. image:: _images/apache-works-2.png
     :alt: Apache Test Page
-    :align: center
+    :width: 480
+    :align: right
 
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
@@ -739,21 +741,26 @@ Just like with the CouchDB Docker installation, there are two ways to setup a co
 
 The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
 
-1a. To launch a basic Apache web server container ::
+1a. To launch a basic Apache web server container
+
+::
 
     docker run -dit --name <desired name> -p 8080:80 httpd:2.4
     
-1b. To launch a persistent Apache web server container ::
+1b. To launch a persistent Apache web server container
+
+::
 
     docker run -dit --name <desired name> -p 8080:80 -v /path/to/data/folder:/usr/local/apache2/htdocs/ httpd:2.4
 
-3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
+2. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
 
 .. image:: _images/apache-works-2.png
     :alt: Apache Test Page
-    :align: center
+    :width: 480
+    :align: right
 
-4. Change directory to ``/var/www/html`` and download EmComMap ::
+3. Change directory to ``/var/www/html`` and download EmComMap ::
 
     cd /var/www/html
     
@@ -761,11 +768,11 @@ The preferred method would be to create a data directory on the host system (out
 
     sudo git clone https://github.com/DanRuderman/EmComMap.git
 
-5. Restart the Apache2 webserver ::
+4. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-6. You may proceed to the :ref:`CouchDB Configuration` section.
+5. You may proceed to the :ref:`CouchDB Configuration` section.
 
 .. _CouchDB Configuration:
 
@@ -790,17 +797,15 @@ CouchDB Configuration
 |
 |
 
-3. On the left side click on the **Configure** link (gear icon)
-
 .. image:: _images/couchdb-configure-2.png
     :alt: CouchDB Configure Screen
     :width: 480
     :align: right
+    
+3. On the left side click on the **Configure** link (gear icon)
 
 4. Click on **CORS** and click **Enable**
 
-|
-|
 |
 |
 |
@@ -855,7 +860,6 @@ CouchDB Configuration
 |
 |
 |
-|
 
 Create Databases
 ++++++++++++++++
@@ -875,8 +879,6 @@ Create Databases
 
 14. Create another database using the same options called ``emcommap_attachments``
 
-|
-
 15. Open the **emcommap** database by clicking on it.
 
 .. image:: _images/couchdb-configure-databasepermissions.png
@@ -888,7 +890,6 @@ Create Databases
 
 17. Under **Roles**, type ``users`` into the box and click **Add Role**
 
-|
 |
 |
 |
@@ -929,7 +930,7 @@ Create Users
 
 26. Click **Create Document**
 
- Repeat steps **20-26** for all desired users.
+ * Repeat steps **20-26** for all desired users.
 
 27. You may proceed to the :ref:`EmComMap Configuration` section.
 
