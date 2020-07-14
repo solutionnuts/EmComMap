@@ -697,17 +697,9 @@ Raspberry OS
 
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
-    :align: right
+    :align: center
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
-
-|
-|
-|
-|
-|
-|
-|
 
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
@@ -738,17 +730,9 @@ The preferred method would be to create a data directory on the host system (out
     
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
-    :align: right
+    :align: center
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
-
-|
-|
-|
-|
-|
-|
-|
 
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
