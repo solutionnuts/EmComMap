@@ -881,7 +881,6 @@ Create Databases
 |
 |
 |
-|
 
 14. Create another database using the same options called ``emcommap_attachments``
 
