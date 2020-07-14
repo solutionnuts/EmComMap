@@ -95,7 +95,9 @@ Debian 9 (stretch)
  |
  |
  |
- 
+
+7. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Debian 10 (buster):
 
 Debian 10 (buster)
@@ -163,7 +165,9 @@ Debian 10 (buster)
  |
  |
  |
- 
+
+7. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Ubuntu 16.04 (xenial):
 
 Ubuntu 16.04 (xenial)
@@ -236,7 +240,9 @@ Ubuntu 16.04 (xenial)
  |
  |
  |
- 
+
+7. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Ubuntu 18.04 (bionic):
 
 Ubuntu 18.04 (bionic)
@@ -309,7 +315,9 @@ Ubuntu 18.04 (bionic)
  |
  |
  |
- 
+
+7. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Ubuntu 20.04 (focal):
 
 Ubuntu 20.04 (focal)
@@ -382,7 +390,9 @@ Ubuntu 20.04 (focal)
  |
  |
  |
- 
+
+7. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _CentOS:
 
 CentOS
@@ -444,6 +454,8 @@ CentOS
  ::
     
     sudo firewall-cmd --reload
+
+9. You can now proceed to installation of the :ref:`Map Tile Server`.
 
 .. _Raspberry OS:
 
@@ -509,6 +521,8 @@ Raspberry OS
 
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
+13. You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Docker:
 
 Docker
@@ -526,12 +540,16 @@ The preferred method would be to create a data directory on the host system (out
 
     docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
 
+You can now proceed to installation of the :ref:`Map Tile Server`.
+
 .. _Map Tile Server:
 
 Map Tile Server
 ---------------
 
-Maps are powered by OpenStreeMap data. They are ready to use and not need to render the tiles after download.
+.. note:: **BE ADVISED:** It is not recommended to run any map tile server from any model of Raspberry Pi. The limited architecture is just unable to sufficiently run the server. It is however feasible to run a map tile server from an x86-x64 based system that is running the new Raspberry OS.
+
+Below we have detailed a linux based Docker container installation of a map tile server where the maps are powered by OpenStreeMap data. They are ready to use and not need to render the tiles after download. You may however, use any map tile server you prefer.
 
 1. Install Docker with the following command ::
 
@@ -614,14 +632,18 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
 7. Click **Click here to get the download key**. You will be taken to the OpenMapTiles site. It will walk you through signing up for a free account if you don't already have one and then provide you with a **DOWNLOAD KEY**. Copy and paste it into the form and click **START DOWNLOAD**.
 
-8. Once the download has completed, click **OPEN MAP SERVER**.
+8. Once the download has completed, click **OPEN MAP SERVER** to test the installation.
+
+.. note:: The he server may be slow to display maps for several minutes while the .mbtiles file is processed.
+
+9. You may proceed to the :ref:`Web Server` installation section.
 
 .. _Web Server:
 
 Web Server
 ----------
 
-You can run whichever webserver you like but we will be using Apache2 for this example.
+Below, we detail the installation of the **Apache2 (httpd)** web server but you may used whichever web server you prefer.
 
 Ubuntu/Debian
 +++++++++++++
@@ -630,7 +652,13 @@ Ubuntu/Debian
 
     sudo apt install -y httpd
 
-2. Change directory to ``/var/www/html`` and download EmComMap ::
+2. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
+
+.. image:: _images/apache-works.png
+    :alt: Apache Test Page
+    :align: center
+
+3. Change directory to ``/var/www/html`` and download EmComMap ::
 
     cd /var/www/html
     
@@ -638,9 +666,11 @@ Ubuntu/Debian
 
     $ sudo git clone https://github.com/DanRuderman/EmComMap.git
 
-3. Restart the Apache2 webserver ::
+4. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
+
+5. You may proceed to the :ref:`CouchDB Configuration` section.
 
 CentOS
 ++++++
@@ -653,9 +683,11 @@ CentOS
     
     sudo systemctl start httpd
     
-3. Confirm Apache is running ::
-    
-    sudo systemctl status httpd
+3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
+
+.. image:: _images/apache-works.png
+    :alt: Apache Test Page
+    :align: center
     
 4. Change directory to ``/var/www/html`` and download EmComMap ::
 
@@ -669,6 +701,8 @@ CentOS
 
     sudo apache2ctl restart
 
+6. You may proceed to the :ref:`CouchDB Configuration` section.
+
 Raspberry OS
 ++++++++++++
 
@@ -680,7 +714,7 @@ Raspberry OS
 
     sudo apt install apache2 -y
 
-3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
+3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
 
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
@@ -697,6 +731,8 @@ Raspberry OS
 5. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
+
+6. You may proceed to the :ref:`CouchDB Configuration` section.
 
 Docker
 ++++++
@@ -731,19 +767,21 @@ The preferred method would be to create a data directory on the host system (out
 
     sudo apache2ctl restart
 
+6. You may proceed to the :ref:`CouchDB Configuration` section.
+
 .. _CouchDB Configuration:
 
 CouchDB Configuration
 ---------------------
 
-1. Open a web browser and go to ``http://<address or IP>:5984/_utils/``
+1. Connect to the Fauxton CouchDB web administration console by opening a web browser and go to ``http://<address or IP>:5984/_utils/``
 
 .. image:: _images/couchdb-configure-1.png
     :alt: CouchDB Fauxton Login Screen
     :width: 480
     :align: right
     
-2. Login to the Fauxton CouchDB web administration console using the account **admin** and the password you set during install.
+2. Login using the account **admin** and the password you set during install.
 
 |
 |
@@ -880,6 +918,10 @@ Create Users
 26. Click **Create Document**
 
 Repeat these steps for all desired users.
+
+27. You may proceed to the :ref:`EmComMap Configuration` section.
+
+.. _EmComMap Configuration:
 
 EmComMap Configuration
 ----------------------
