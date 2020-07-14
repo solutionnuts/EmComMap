@@ -696,7 +696,7 @@ Raspberry OS
     sudo apt install apache2 -y
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``
-
+|
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
     :align: right
@@ -738,7 +738,7 @@ The preferred method would be to create a data directory on the host system (out
     docker run -dit --name <desired name> -p 8080:80 -v /path/to/data/folder:/usr/local/apache2/htdocs/ httpd:2.4
     
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``
-
+|
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
     :align: right
