@@ -428,8 +428,6 @@ CentOS
 
     sudo systemctl status couchdb
 
-|
-
 4. Using your text editor, open this file ``/opt/couchdb/etc/local.ini``
 
 5. Scroll down to the **[admins]** section and uncomment the following line and change the default password ::
@@ -511,11 +509,15 @@ Raspberry OS
 
     sudo chown -R couchdb:couchdb /home/couchdb
     
-10. Change the permission of the CouchDB directories ::
+10. Change the permission of the CouchDB directories
+
+::
 
     sudo find /home/couchdb -type d -exec chmod 0770 {} \;
     
-11. Change permissions of the CouchDB ini files ::
+11. Change permissions of the CouchDB ini files
+
+::
 
     sudo chmod 0644 /home/couchdb/etc/*
 
@@ -551,11 +553,7 @@ Map Tile Server
 
 Below we have detailed a linux based Docker container installation of a map tile server where the maps are powered by OpenStreeMap data. They are ready to use and not need to render the tiles after download. You may however, use any map tile server you prefer.
 
-1. Install Docker with the following command ::
-
-    curl -sSL https://get.docker.com/ | sh
-    
-2. Make a directory to store your map tile file and then change directory to it ::
+1. Make a directory to store your map tile file and then change directory to it ::
 
     mkdir openmaptiles
     
@@ -563,7 +561,7 @@ Below we have detailed a linux based Docker container installation of a map tile
 
     cd openmaptiles
     
-3. Launch a Docker container with the following command. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open. ::
+2. Launch a Docker container with the following command. It will download the OpenMapTiles-Server container image from the Docker Hub and launch the OpenMapTiles-Server container in **detached** mode and will restart the container when system is rebooted for any reason. Detached mode allows the program to launch without leaving a terminal window open. ::
 
     docker run -dit --name <disiredservername> -v $(pwd):/data -p 8080:80 --restart always klokantech/openmaptiles-server
 
@@ -634,7 +632,7 @@ Below we have detailed a linux based Docker container installation of a map tile
 
 8. Once the download has completed, click **OPEN MAP SERVER** to test the installation.
 
-.. note:: The he server may be slow to display maps for several minutes while the .mbtiles file is processed.
+.. note:: The map tile server may be slow to display maps for several minutes while the .mbtiles file is processed.
 
 9. You may proceed to the :ref:`Web Server` installation section.
 
@@ -685,7 +683,7 @@ CentOS
     
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
 
-.. image:: _images/apache-works.png
+.. image:: _images/apache-works-2.png
     :alt: Apache Test Page
     :align: center
     
@@ -716,7 +714,7 @@ Raspberry OS
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
 
-.. image:: _images/apache-works.png
+.. image:: _images/apache-works-2.png
     :alt: Apache Test Page
     :align: center
 
@@ -751,7 +749,7 @@ The preferred method would be to create a data directory on the host system (out
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``. You should see this page.
 
-.. image:: _images/apache-works.png
+.. image:: _images/apache-works-2.png
     :alt: Apache Test Page
     :align: center
 
@@ -783,6 +781,9 @@ CouchDB Configuration
     
 2. Login using the account **admin** and the password you set during install.
 
+|
+|
+|
 |
 |
 |
@@ -853,6 +854,8 @@ CouchDB Configuration
 |
 |
 |
+|
+|
 
 Create Databases
 ++++++++++++++++
@@ -884,6 +887,15 @@ Create Databases
 16. Click on **Permissions** on the left
 
 17. Under **Roles**, type ``users`` into the box and click **Add Role**
+
+|
+|
+|
+|
+|
+|
+|
+|
 
 18. Now add the role **users** to the **emcommap_attachments** database
 
@@ -917,7 +929,7 @@ Create Users
 
 26. Click **Create Document**
 
-Repeat these steps for all desired users.
+ Repeat steps **20-26** for all desired users.
 
 27. You may proceed to the :ref:`EmComMap Configuration` section.
 
