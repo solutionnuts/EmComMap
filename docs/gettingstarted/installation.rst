@@ -697,7 +697,7 @@ Raspberry OS
 
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``
 
-.. image:: _images/apache-works.png
+.. image:: ./images/apache-works.png
     :alt: Apache Test Page
     :align: right
     
@@ -739,9 +739,9 @@ The preferred method would be to create a data directory on the host system (out
     
 3. Test the install by opening a web browser and going to ``http://<hostname or IP>:8080``
 
-.. image:: _images/apache-works.png
+.. image:: ./images/apache-works.png
     :alt: Apache Test Page
-    :align: center
+    :align: right
     
     You should see this page.
 |
@@ -771,10 +771,10 @@ CouchDB Configuration
 
 1. Open a web browser and go to ``http://<address or IP>:5984/_utils/``
 
-.. image:: _images/couchdb-configure-1.png
+.. image:: ./images/couchdb-configure-1.png
     :alt: CouchDB Fauxton Login Screen
     :width: 480
-    :align: center
+    :align: right
     
 2. Login to the Fauxton CouchDB web administration console using the account **admin** and the password you set during install.
 
