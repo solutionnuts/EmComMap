@@ -741,7 +741,7 @@ The preferred method would be to create a data directory on the host system (out
 
 .. image:: _images/apache-works.png
     :alt: Apache Test Page
-    :align: right
+    :align: center
     
     You should see this page.
 |
@@ -774,7 +774,7 @@ CouchDB Configuration
 .. image:: _images/couchdb-configure-1.png
     :alt: CouchDB Fauxton Login Screen
     :width: 480
-    :align: right
+    :align: center
     
 2. Login to the Fauxton CouchDB web administration console using the account **admin** and the password you set during install.
 
