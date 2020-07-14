@@ -531,15 +531,15 @@ There are two ways to setup a container. First one lets Docker manage the file s
 
 The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
 
-1a. To start a basic CouchDB container ::
+* To start a basic CouchDB container ::
 
     docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> --restart always couchdb:latest
  
-1b. To launch a CouchDB container with persistent file storage ::
+* To launch a CouchDB container with persistent file storage ::
 
     docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
     
-2. Now you may move on to the :ref:`CouchDB Configuration` section
+Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Map Tile Server:
 
@@ -554,7 +554,7 @@ Maps are powered by OpenStreeMap data. They are ready to use and not need to ren
     
 2. Make a directory to store your map tile file and then change directory to it ::
 
-    $ mkdir openmaptiles
+    mkdir openmaptiles
     
  ::
 
