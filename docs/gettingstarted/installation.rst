@@ -89,16 +89,6 @@ Debian 9 (stretch)
     
 6. Set a password for the CouchDB **Admin** account
 
- |
- |
- |
- |
- |
- |
- |
-
-7. Now you may move on to the :ref:`CouchDB Configuration` section
-
 .. _Debian 10 (buster):
 
 Debian 10 (buster)
@@ -159,16 +149,6 @@ Debian 10 (buster)
     :align: right
     
 6. Set a password for the CouchDB **Admin** account
-
- |
- |
- |
- |
- |
- |
- |
-
-7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Ubuntu 16.04 (xenial):
 
@@ -234,16 +214,6 @@ Ubuntu 16.04 (xenial)
     
 6. Set a password for the CouchDB **Admin** account
 
- |
- |
- |
- |
- |
- |
- |
-
-7. Now you may move on to the :ref:`CouchDB Configuration` section
-
 .. _Ubuntu 18.04 (bionic):
 
 Ubuntu 18.04 (bionic)
@@ -307,16 +277,6 @@ Ubuntu 18.04 (bionic)
     :align: right
     
 6. Set a password for the CouchDB **Admin** account
-
- |
- |
- |
- |
- |
- |
- |
-
-7. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Ubuntu 20.04 (focal):
 
@@ -382,16 +342,6 @@ Ubuntu 20.04 (focal)
     
 6. Set a password for the CouchDB **Admin** account
 
- |
- |
- |
- |
- |
- |
- |
-
-7. Now you may move on to the :ref:`CouchDB Configuration` section
-
 .. _CentOS:
 
 CentOS
@@ -453,8 +403,6 @@ CentOS
  ::
     
     sudo firewall-cmd --reload
-    
-9. Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Raspberry OS:
 
@@ -520,8 +468,6 @@ Raspberry OS
 
 12. If you would like, you may remove unnecessary files (the .gz file and build directory in the **pi** user's home folder and not the **couchdb** user's home folder)
 
-13. Now you may move on to the :ref:`CouchDB Configuration` section
-
 .. _Docker:
 
 Docker
@@ -538,8 +484,6 @@ The preferred method would be to create a data directory on the host system (out
 * To launch a CouchDB container with persistent file storage ::
 
     docker run -d --name <desired name> -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<desired password> -v /home/couchdb/data:/opt/couchdb/data --restart always couchdb:latest
-    
-Now you may move on to the :ref:`CouchDB Configuration` section
 
 .. _Map Tile Server:
 
