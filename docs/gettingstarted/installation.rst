@@ -567,8 +567,6 @@ Below we have detailed a linux based Docker container installation of a map tile
 
 .. warning:: The Docker OpenMapTiles container **MUST** be run from the directory you created above.
 
-|
-
 .. image:: _images/OpenMapTiles_Configure_1.png
     :alt: OpenMapTiles Setup Screen
     :align: right
