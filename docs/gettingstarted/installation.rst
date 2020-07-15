@@ -679,7 +679,11 @@ CentOS
 
     sudo yum update httpd && sudo yum install httpd
 
-2. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
+2. Enable the **httpd** service so it will start automatically on reboot ::
+
+    sudo systemctl enable httpd
+
+3. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
     
     sudo systemctl start httpd
 
@@ -688,7 +692,7 @@ CentOS
     :width: 400
     :align: right
 
-3. Check the **httpd** service status ::
+4. Check the **httpd** service status ::
 
     sudo systemctl status httpd
 
@@ -696,23 +700,27 @@ CentOS
 |
 |
 
-4. Change to home directory ::
+5. Now open the **http** port (port 80) in the CentOS firewall ::
+
+    sudo firewall-cmd --permanent --zone=public --add-service=http
+    
+6. Change to home directory ::
 
     cd ~
     
-5. Download the EmComMap repository ::
+7. Download the EmComMap repository ::
 
     git clone https://github.com/DanRuderman/EmComMap.git
 
-6. Copy the EmComMap HTML files and folders to the web server root folder ``/usr/local/apache2/htdocs`` ::
+8. Copy the EmComMap HTML files and folders to the web server root folder ``/var/www/html/`` ::
 
-    cp -r EmComMap/html/* /usr/local/apache2/htdocs/
+    cp -r EmComMap/html/* /var/www/html/
 
-7. Restart the Apache2 webserver ::
+9. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-8. You may proceed to the :ref:`CouchDB Configuration` section.
+10. You may proceed to the :ref:`CouchDB Configuration` section.
 
 Raspberry OS
 ++++++++++++
