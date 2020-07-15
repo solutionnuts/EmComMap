@@ -685,17 +685,13 @@ CentOS
 
 .. image:: _images/apache-status.png
     :alt: Apache Service Status
-    :width: 480
+    :width: 400
     :align: right
 
 3. Check the **httpd** service status ::
 
     sudo systemctl status httpd
 
-|
-|
-|
-|
 |
 |
 |
