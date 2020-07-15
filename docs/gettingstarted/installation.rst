@@ -646,7 +646,7 @@ Ubuntu/Debian
 
 1. Run the following command to install **Apache2** ::
 
-    sudo apt install -y httpd
+    sudo apt install -y apache2
 
 2. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
 
@@ -654,19 +654,23 @@ Ubuntu/Debian
     :alt: Apache Test Page
     :align: center
 
-3. Change directory to ``/var/www/html`` and download EmComMap ::
+3. Change to home directory ::
 
-    cd /var/www/html
+    cd ~
     
- ::
+4. Download the EmComMap repository ::
 
-    $ sudo git clone https://github.com/DanRuderman/EmComMap.git
+    git clone https://github.com/DanRuderman/EmComMap.git
 
-4. Restart the Apache2 webserver ::
+5. Copy the EmComMap HTML files and folders to the web server root folder ``/var/www/html`` ::
+
+    cp -r EmComMap/html/* /var/www/html/
+
+6. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-5. You may proceed to the :ref:`CouchDB Configuration` section.
+7. You may proceed to the :ref:`CouchDB Configuration` section.
 
 CentOS
 ++++++
@@ -679,26 +683,40 @@ CentOS
     
     sudo systemctl start httpd
     
-3. Test the install by opening a web browser and going to ``http://<hostname or IP>``. You should see this page.
+3. Check the **httpd** service status ::
 
-.. image:: _images/apache-works-2.png
-    :alt: Apache Test Page
+    sudo systemctl status httpd
+
+.. image:: _images/apache-status.png
+    :alt: Apache Service Status
     :width: 480
-    :align: center
+    :align: right
+
+|
+|
+|
+|
+|
+|
+|
+
+4. Change to home directory ::
+
+    cd ~
     
-4. Change directory to ``/var/www/html`` and download EmComMap ::
+5. Download the EmComMap repository ::
 
-    cd /var/www/html
-    
- ::
+    git clone https://github.com/DanRuderman/EmComMap.git
 
-    sudo git clone https://github.com/DanRuderman/EmComMap.git
+6. Copy the EmComMap HTML files and folders to the web server root folder ``/usr/local/apache2/htdocs`` ::
 
-5. Restart the Apache2 webserver ::
+    cp -r EmComMap/html/* /usr/local/apache2/htdocs/
+
+7. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-6. You may proceed to the :ref:`CouchDB Configuration` section.
+8. You may proceed to the :ref:`CouchDB Configuration` section.
 
 Raspberry OS
 ++++++++++++
@@ -718,19 +736,23 @@ Raspberry OS
     :width: 480
     :align: center
 
-4. Change directory to ``/var/www/html`` and download EmComMap ::
+4. Change to home directory ::
 
-    cd /var/www/html
+    cd ~
     
- ::
+5. Download the EmComMap repository ::
 
-    sudo git clone https://github.com/DanRuderman/EmComMap.git
+    git clone https://github.com/DanRuderman/EmComMap.git
 
-5. Restart the Apache2 webserver ::
+6. Copy the EmComMap HTML files and folders to the web server root folder ``/usr/local/apache2/htdocs`` ::
+
+    cp -r EmComMap/html/* /usr/local/apache2/htdocs/
+
+7. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-6. You may proceed to the :ref:`CouchDB Configuration` section.
+8. You may proceed to the :ref:`CouchDB Configuration` section.
 
 Docker
 ++++++
@@ -739,15 +761,11 @@ Just like with the CouchDB Docker installation, there are two ways to setup a co
 
 The preferred method would be to create a data directory on the host system (outside the container) and mount this to a directory visible from inside the container. This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
 
-1. To launch a basic Apache web server container
-
-::
+1. To launch a basic Apache web server container ::
 
     docker run -dit --name <desired name> -p 8080:80 httpd:2.4
     
-2. To launch a persistent Apache web server container
-
-::
+2. To launch a persistent Apache web server container ::
 
     docker run -dit --name <desired name> -p 8080:80 -v /path/to/data/folder:/usr/local/apache2/htdocs/ httpd:2.4
 
@@ -758,19 +776,27 @@ The preferred method would be to create a data directory on the host system (out
     :width: 480
     :align: center
 
-4. Change directory to ``/var/www/html`` and download EmComMap ::
+4. Access the container to download EmComMap files ::
 
-    cd /var/www/html
+    docker exec -it <container name> bash
     
- ::
+5. Change to home directory ::
 
-    sudo git clone https://github.com/DanRuderman/EmComMap.git
+    cd ~
+    
+6. Download the EmComMap repository ::
 
-5. Restart the Apache2 webserver ::
+    git clone https://github.com/DanRuderman/EmComMap.git
+
+7. Copy the EmComMap HTML files and folders to the web server root folder ``/usr/local/apache2/htdocs`` ::
+
+    cp -r EmComMap/html/* /usr/local/apache2/htdocs/
+
+8. Restart the Apache2 webserver ::
 
     sudo apache2ctl restart
 
-6. You may proceed to the :ref:`CouchDB Configuration` section.
+9. You may proceed to the :ref:`CouchDB Configuration` section.
 
 .. _CouchDB Configuration:
 
@@ -942,9 +968,9 @@ Create Users
 EmComMap Configuration
 ----------------------
 
-1. Open the file ``/var/www/html/EmComMap/html/config.js`` in a text editor ::
+1. From your web server, open the file ``/usr/local/apache2/htdocs/config.js`` in a text editor ::
 
-    sudo vim /var/www/html/EmComMap/html/config.js
+    sudo vim /usr/local/apache2/htdocs/config.js
     
 2. Towards the top of the file you will see these lines ::
 
