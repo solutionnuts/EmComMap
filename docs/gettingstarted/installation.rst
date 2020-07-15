@@ -992,7 +992,7 @@ EmComMap Configuration
         
 3. Change the **RUN_LOCATION** string to ``my-install`` instead of ``local``
 
-4. To the right of **var TILE_SERVER** change ``<host>``to the hostname or IP of your Map Tile Server
+4. To the right of **var TILE_SERVER** change ``<host>`` to the hostname or IP of your Map Tile Server
 
 5. To the right of **var DEFAULT_DB_HOST** change ``<host>`` to the hostname or IP of your CouchDB server
 
@@ -1000,9 +1000,13 @@ EmComMap Configuration
 
     sudo vim map.js
 
-::
+ Look for the following line ::
 
     var mymap =L.map('mapid').setView([34.065, -118.253], 10); // start in LA
+
+ **34.065, -118.253** is the default setting for Los Angeles, CA. Once you change and restart the web server, the map will open defaulting to your location.
+ 
+7. Restart the **Apache** web server
 
 .. note:: You can also change the default zoom level but change the number after the coordinates. Default is **10**
 
