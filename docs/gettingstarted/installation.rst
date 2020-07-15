@@ -682,15 +682,15 @@ CentOS
 2. Start your web server. Apache does not start automatically on CentOS once the installation completes. ::
     
     sudo systemctl start httpd
-    
-3. Check the **httpd** service status ::
-
-    sudo systemctl status httpd
 
 .. image:: _images/apache-status.png
     :alt: Apache Service Status
     :width: 480
     :align: right
+
+3. Check the **httpd** service status ::
+
+    sudo systemctl status httpd
 
 |
 |
