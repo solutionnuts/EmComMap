@@ -972,9 +972,9 @@ Create Users
 EmComMap Configuration
 ----------------------
 
-1. From your web server, open the file ``/usr/local/apache2/htdocs/config.js`` in a text editor ::
+1. From your web server default directory, open the file ``config.js`` in a text editor ::
 
-    sudo vim /usr/local/apache2/htdocs/config.js
+    sudo vim config.js
     
 2. Towards the top of the file you will see these lines ::
 
@@ -992,11 +992,22 @@ EmComMap Configuration
         
 3. Change the **RUN_LOCATION** string to ``my-install`` instead of ``local``
 
-4. Change both instances of ``<host>`` to the hostname or IP of your EmComMap server.
+4. To the right of **var TILE_SERVER** change ``<host>``to the hostname or IP of your Map Tile Server
 
-.. note:: If you have the CouchDB server on a different computer, then you will need to use that computer's address for **DEFAULT_DB_HOST**.
+5. To the right of **var DEFAULT_DB_HOST** change ``<host>`` to the hostname or IP of your CouchDB server
+
+6. To change the default location of the map, change the coordinates in the **mymap** variable in the ``map.js`` file ::
+
+    sudo vim map.js
+
+::
+
+    var mymap =L.map('mapid').setView([34.065, -118.253], 10); // start in LA
+
+.. note:: You can also change the default zoom level but change the number after the coordinates. Default is **10**
 
 .. note:: If your deployment is for testing only set the value of **TEST_MODE** to ``true`` in ``config.js``. This will put the text **TESTING** in bold red font at the top of the application and precede all messages with **TESTING:**. The purpose is to ensure that test traffic is not mistaken for a real-world emergency.
 
+**CONGRATULATIONS!** You have now completed the installation and configuration of EmComMap. To start using EmComMap, proceed to the *OPERATION* section.
 
 
